@@ -1,0 +1,74 @@
+.catalog-index {
+    padding-top: 24px;
+}
+
+@media (min-width: 992px) {
+    .catalog-index {
+        padding-top: 26px;
+    }
+}
+
+.card {
+    height: 100%;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: black;
+}
+
+.pagination a {
+    font-size: 19px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-tabs .active {
+    border-bottom: 3px solid #da291c;
+}
+
+.nav-tabs > li > a:hover {
+    border-bottom: 3px solid #da291c;
+    background: transparent;
+}
+
+.nav-tabs > li > a {
+    border-bottom: 3px solid #d3d3d3;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    height: 45px;
+    color: #232323;
+    font-size: 16px;
+}
+
+.nav-tabs > li > a:hover {
+    color: #da291c;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    color: #232323;
+    font-size: 16px;
+    border-color: #eee #eee #ddd;
+}

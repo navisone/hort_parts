@@ -1,0 +1,14 @@
+
+.catalog-all {
+    padding-top: 4px;
+}
+
+.catalog-detail {
+
+}
+
+@media (min-width: 992px) {
+    .catalog-all {
+        padding-top: 6px;
+    }
+}

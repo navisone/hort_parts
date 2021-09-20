@@ -1,0 +1,359 @@
+.vw5-homePageStage {
+    position: ;
+    top: 0px !important;
+}
+
+.fa-check:hover {
+    color: #fff;
+}
+
+a:hover, a:focus {
+    color: #FF0000;
+}
+
+.catalog_name {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+.main_copyright {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+.hort_main_catalog{
+    position: relative;
+    height: auto;
+    width: auto;
+    display: block;
+    left: 0;
+    background-image: #fff;
+    min-height: 100%;
+}
+
+.hort_main_footer {
+    position: relative;
+    display: block;
+}
+
+.form-group {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+.field-shockabsorbersearch-shockabsorbersearch {
+    width: 35%;
+}
+.field-cylindersearch-cylindersearch {
+    width: 35%;
+}
+.field-highvoltagewiresearch-highvoltagewiresearch {
+    width: 35%;
+}
+.field-waterpumpsearch-waterpumpsearch {
+    width: 35%;
+}
+.field-gasstopsearch-gasstopsearch {
+    width: 35%;
+}
+.field-brakepadsearch-brakepadsearch {
+    width: 35%;
+}
+.field-thermostatsearch-thermostatsearch {
+    width: 35%;
+}
+.field-pillarstabilizersearch-pillarstabilizersearch {
+    width: 35%;
+}
+.field-starterbatterysearch-starterbatterysearch {
+    width: 35%;
+}
+.field-startersearch-startersearch {
+    width: 35%;
+}
+.field-branchpipesearch-branchpipesearch {
+    width: 35%;
+}
+.field-beltsearch-beltsearch {
+    width: 35%;
+}
+.field-generatorsearch-generatorsearch {
+    width: 35%;
+}
+.field-contactform-name {
+    padding-right: 30px;
+}
+.field-contactform-email {
+    padding-right: 30px;
+}
+.field-contactform-subject {
+    padding-right: 30px;
+}
+.field-contactform-body {
+    padding-right: 30px;
+}
+
+.breadcrumb {
+    z-index: 1;
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 33px;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+li.breadcrumb-home a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+li.catalog a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.site-about {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.logo-about {
+    float: left;
+    margin: 10px 30px 10px 10px;
+}
+
+li.site-about {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.site-warranty {
+    padding-top: 4px;
+}
+@media (min-width: 992px) {
+    .site-warranty {
+        padding-top: 6px;
+    }
+}
+
+.site-news {
+    padding-top: 4px;
+}
+@media (min-width: 992px) {
+    .site-warranty {
+        padding-top: 6px;
+    }
+}
+
+.news-article {
+    padding-top: 4px;
+}
+@media (min-width: 992px) {
+    .news-article {
+        padding-top: 6px;
+    }
+}
+
+.main_catalog_text {
+    font-family:'Open Sans';
+    font-size: 30px;
+    color: #000000;
+    font-weight: normal;
+    padding-top: 25%;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.main_catalog_text_vertical {
+    font-family:'Open Sans';
+    font-size: 30px;
+    color: #000000;
+    font-weight: normal;
+    padding-top: 130%;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.main_catalog_details {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FF0000;
+    background-color: Transparent;
+    letter-spacing: 0em;
+    z-index: 9;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.xr_tc {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: #FF0000;
+}
+
+button.xr_tc.main_catalog_details {
+    padding-top: 0px;
+}
+
+.xr_tc.main_catalog_details:hover {
+    border: 2px solid #FF0000;
+}
+
+.xr_tc.main_catalog_details:focus {
+    outline: none !important;
+}
+
+.site-error {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.card:hover{
+    border: 3px solid #FF0000;
+}
+
+footer.footer {
+
+}
+
+@media only screen and (max-width:768px) {
+    .main_catalog_text {
+        font-size: 18px;
+    }
+    .main_catalog_text_vertical {
+        font-size: 18px;
+    }
+    .main_catalog_details {
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .main_catalog_text {
+        font-size: 20px;
+    }
+    .main_catalog_text_vertical {
+        font-size: 20px;
+    }
+    .main_catalog_details {
+        font-size: 13px;
+    }
+
+    .catalog-index {
+        padding-left: 100px;
+    }
+    .catalog-all {
+        padding-left: 100px;
+    }
+    .catalog-detail {
+        padding-left: 100px;
+    }
+    .site-news {
+        padding-left: 100px;
+    }
+    .site-warranty {
+        padding-left: 100px;
+    }
+
+
+}
+
+@media only screen and (min-width:992px) {
+    .main_catalog_text {
+        font-size: 25px;
+    }
+    .main_catalog_text_vertical {
+        font-size: 25px;
+    }
+    .main_catalog_details {
+        font-size: 18px;
+    }
+
+    .catalog-index {
+        padding-left: 100px;
+    }
+    .catalog-all {
+        padding-left: 100px;
+    }
+    .catalog-detail {
+        padding-left: 100px;
+    }
+    .site-news {
+        padding-left: 100px;
+    }
+    .site-warranty {
+        padding-left: 100px;
+    }
+
+
+}
+
+@media only screen and (min-width:1200px) {
+    .main_catalog_text {
+        font-size: 30px;
+    }
+    .main_catalog_text_vertical {
+        font-size: 30px;
+    }
+    .main_catalog_details {
+        font-size: 20px;
+    }
+
+    .catalog-index {
+        padding-left: 100px;
+    }
+    .catalog-all {
+        padding-left: 100px;
+    }
+    .catalog-detail {
+        padding-left: 100px;
+    }
+    .site-news {
+        padding-left: 100px;
+    }
+    .site-warranty {
+        padding-left: 100px;
+    }
+
+}
+
+@media only screen and (min-width:1400px) {
+    .catalog-index {
+        padding-left: 10px;
+    }
+    .catalog-all {
+        padding-left: 10px;
+    }
+    .catalog-detail {
+        padding-left: 10px;
+    }
+    .site-news {
+        padding-left: 10px;
+    }
+    .site-warranty {
+        padding-left: 10px;
+    }
+
+}
