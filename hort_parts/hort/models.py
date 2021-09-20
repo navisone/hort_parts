@@ -1,46 +1,84 @@
 from django.db import models
-from datetime import datetime
-from django.utils import timezone
 from django.urls import reverse
 
 
 class Category(models.Model):
     name = models.CharField(max_length=300)
-    comment = models.CharField(max_length=500, null=True, blank=True)
-    url = models.SlugField(max_length=250, unique=True)
+    comment = models.CharField(max_length=300, null=True, blank=True)
+    url = models.SlugField(max_length=300, unique=True)
 
     def __str__(self):
-        return self.name
+        return str(self.url)
+
+    def get_absolute_url(self):
+        return reverse('hort:product_list', args=[self.url])
 
     class Meta:
         verbose_name = "Category"
         verbose_name_plural = "Categories"
 
 
+class Product(models.Model):
+    source_id = models.CharField(max_length=300, null=True, blank=True)
+    article = models.CharField(max_length=300, null=True, blank=True)
+    name = models.CharField(max_length=300, null=True, blank=True)
+    category = models.ForeignKey(Category,
+                                 on_delete=models.SET_NULL, related_name="product_category", null=True, blank=True)
+    specification = models.CharField(max_length=300, null=True, blank=True)
+    advanced_description = models.TextField("Advanced description", null=True, blank=True)
+    is_active = models.BooleanField(default=1, null=True)
+    comment = models.CharField(max_length=300, null=True, blank=True)
+    slug = models.SlugField(max_length=300, unique=True)
+
+    def __str__(self):
+        return str(self.article)
+
+    def get_absolute_url(self):
+        return reverse('hort:product_detail', args=[self.category.url, self.slug])
+
+    class Meta:
+        verbose_name = "Product"
+        verbose_name_plural = "Products"
+
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True)
+    source_product = models.CharField(max_length=300, null=True, blank=True)
+    image_url = models.URLField(max_length=300, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.id)
+
+    class Meta:
+        verbose_name = "ProductImage"
+        verbose_name_plural = "ProductImages"
+
+
+class ContentCategory(models.Model):
+    name = models.CharField(max_length=300)
+    comment = models.CharField(max_length=300, null=True, blank=True)
+    url = models.SlugField(max_length=300, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "ContentCategory"
+        verbose_name_plural = "ContentCategories"
+
+
 class Content(models.Model):
     alias = models.SlugField(max_length=300, unique=True)
-    created_date = models.DateTimeField(default=datetime.today, null=True)
-    updated_date = models.DateTimeField(default=datetime.today, null=True)
     published = models.BooleanField(default=0)
     main_image = models.ImageField(upload_to="content/main_image/", blank=True, null=True)
-    category_id = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, related_name="content_category", null=True, blank=True)
-    title = models.CharField(max_length=500, null=True)
-    intro_text = models.CharField(max_length=1000, null=True)
+    category = models.ForeignKey(
+        ContentCategory, on_delete=models.SET_NULL, related_name="content_category", null=True, blank=True)
+    title = models.CharField(max_length=300, null=True)
     full_text = models.TextField(null=True)
-    meta_tag_title = models.CharField(max_length=500, null=True, blank=True)
-    meta_tag_description = models.CharField(max_length=500, null=True, blank=True)
-    meta_tag_keyword = models.CharField(max_length=500, null=True, blank=True)
-    geo = models.CharField(max_length=250, null=True, blank=True)
 
     def __str__(self):
         return self.alias
 
-    def get_absolute_url(self):
-        return reverse('news_detail', kwargs={"slug": self.alias})
-
     class Meta:
         verbose_name = "Content"
         verbose_name_plural = "Contents"
-
-
