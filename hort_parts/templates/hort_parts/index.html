@@ -14,9 +14,9 @@
                 <div class="vw5-homePageStageImage__container vw5-kwcImageContainer  parallaxImage"
                      style="padding-bottom: 75%"
                      data-width-steps="[1160,1299,1450,1617,1805,2023,2282,2603,3025,3025]"
-                     data-src="/images/intro_bg.png">
+                     data-src="{% static 'images/intro_bg.png' %}">
                     <noscript>
-                        <img src="/images/intro_bg.png"/>
+                        <img src="{% static 'images/intro_bg.png' %}"/>
                     </noscript>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <a class="vw5-kwcBasicLinkTagIntern vw5-kwcPopup vw5-kwcLinkIntern"
                        href="#catalog" title="<?= Yii::t('main', 'Catalog') ?>">
                     <span class="vw5-themeButtonPrimary__text vw5-themeButtonPrimary__text--primary">
-                             <?= Yii::t('main', 'Catalog') ?> <i class="fa fa-angle-double-right"
+                             Catalog<i class="fa fa-angle-double-right"
                                                                  aria-hidden="true"></i>
                             </span> </a>
                 </div>
@@ -56,7 +56,7 @@
     <div class="hidden-xs">
     <div class="container">
         <div class="catalog_name">
-            <?= Yii::t('main', 'Product Catalog') ?>
+            Product Catalog
         </div>
     </div>
     </div>
@@ -75,10 +75,10 @@
                                 </div>
                                 <div class="museBGSize grpelem" id="u127">
 
-                                    <div class="main_catalog_text"><?= Yii::t('catalog', 'Starters') ?></div>
+                                    <div class="main_catalog_text">Starters</div>
                                     <div class="main_catalog_details">
                                         <button type="button" class="xr_tc main_catalog_details">
-                                            <?= Yii::t('catalog', 'DETAILED') ?></button>
+                                            DETAILED</button>
                                     </div>
 
                                     <div class="fluid_height_spacer"></div>

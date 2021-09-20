@@ -31,14 +31,21 @@
     <link rel="stylesheet" href="{% static 'css/hort-mobile.css' %}">
 
 </head>
+
 <body class="vw5-frontend vw5-rootDomainAtMaster vw5-rootDomainAt__HomePage_Component">
+<div class="vw5-rootDomainAtMaster__page">
+    <div class="vw5-rootDomainAtMaster__outerContent">
 
-{% include 'hort_parts/include/header.html' %}
+        {% include 'hort_parts/include/header.html' %}
+        {% include 'hort_parts/include/sidebar.html' %}
 
-{% block content_page %}
-{% endblock %}
+        {% block content_page %}
+        {% endblock %}
 
-{% include 'hort_parts/include/footer.html' %}
+        {% include 'hort_parts/include/footer.html' %}
+
+    </div>
+</div>
 
 <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -47,10 +54,7 @@
 <script src="{% static 'js/hort-catalog.js' %}"></script>
 <script src="{% static 'js/hort-rb.js' %}"></script>
 <script src="{% static 'js/h-defer.js' %}"></script>
-<script src="{% static 'js/h-defer2.js %}"></script>
+<script src="{% static 'js/h-defer2.js' %}"></script>
 
 </body>
 </html>
-
-
-
