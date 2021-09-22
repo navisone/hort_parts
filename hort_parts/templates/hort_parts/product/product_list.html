@@ -7,4 +7,47 @@
 
 {% block product_page %}
 
+<div class="catalog-all">
+
+    <div class="container">
+
+        <div class="row my-4">
+            <div class="col-lg-4">
+                <img class="card-img-top" src="#" alt=""/>
+            </div>
+
+            <div class="col-lg-8">
+                <p> Category </p>
+            </div>
+
+        </div>
+
+        <div class="card-search text-white bg-secondary my-4 text-center">
+            <div class="card-body">
+                Search
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-lg-4">
+                    <a href="detail?url=<?= $model->url?>"> <img class="card-img-top" src="<?= $model->image ?>" alt=""></a>
+                </div>
+                <div class="col-lg-7">
+                    <h1><b>Nane</b></h1>
+                    <br/>
+                    <p>
+                    <h3>Vendor Code</h3></p>
+                    <p>
+                    <h3>Specification</h3></p>
+                    <br/>
+                    <p>DETAILED</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+</div>
+
 {% endblock product_page %}

@@ -1,0 +1,367 @@
+{% extends 'hort_parts/main.html' %}
+{% load static i18n hort_tag %}
+{% block  title_page %}
+<title>Hort - Download</title>
+{% endblock title_page %}
+
+
+{% block content_page %}
+
+<div class="catalog-index">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/shockabsorber/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/absorber_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Shock absorbers') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/shockabsorber.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/highvoltagewire/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/provod_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'High voltage wires') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/highvoltagewire.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/waterpump/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/water_pump_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Water pumps') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/waterpump.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/gasstop/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/gas_stop_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Gas springs') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/gasstop.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/discbrake/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/disc_brake_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Disc brakes') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/discbrake.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/brakepad/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/brake_pad_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Brake pads') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/brakepad.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/generator/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/generator_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Generators') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/generator.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/belt/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/belt_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Belts') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/belt.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/branchpipe/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/patrubki_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Branch pipes') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/branchpipe.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/starter/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/starter_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Starters') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/starter.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/starterbattery/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/battery_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Starter batteries') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/starterbattery.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/pillarstabilizer/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/stoyka_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Stabilizer stands') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/pillarstabilizer.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/thermostat/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/thermostat_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Thermostats') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/thermostat.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/cylinder/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/cylinder_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Clutch and brake cylinders') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/cylinder.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/balljoint/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/balljoint_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Ball joints') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/balljoint.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/steeringtip/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/steeringtip_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Steering tips') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/steeringtip.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/controlarm/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/controlarm_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Control arms') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/controlarm.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/bracket/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/bracket_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Brackets') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/bracket.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/absorberbushing/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/absorberbushing_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Absorber bushings') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/absorberbushing.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/stabilizerbushing/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/stabilizerbushing_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Stabilizer bushings') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/stabilizerbushing.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/hangerexhaust/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/hangerexhaust_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Hanger exhausts') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/hangerexhaust.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/valvecovergasket/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/valvecovergasket_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Valve cover gaskets') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/valvecovergasket.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                    <a href="<?= Url::toRoute(['/rubberbushing/index'])?>">
+                        <img class="card-img-top" src="/images/catalog/rubberbushing_500.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title"><?= Yii::t('catalog', 'Rubber bushings') ?></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/images/download/rubberbushing.rar"
+                           class="btn btn-success"><?= Yii::t('main', 'Download') ?></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content_page %}

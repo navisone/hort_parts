@@ -7,4 +7,48 @@
 
 {% block product_page %}
 
+<div class="catalog-detail">
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-lg-5">
+                <img class="card-img-top" src="<?= $detail->image ?>" alt="">
+            </div>
+            <div class="col-lg-7">
+                <h1><b>name</b></h1>
+                <br /> <br />
+                <p><h3><b>Vendor Code</b></h3></p>
+                <br />
+                <p><h3><b>Specification</b></h3></p>
+                <br />
+                <p><h3>characteristic</h3></p>
+                <br />
+            </div>
+
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a data-toggle="tab" href="#panel1" class="active">Application of Spare Parts</a></li>
+                    <li><a data-toggle="tab" href="#panel2">Cross Code</a></li>
+                </ul>
+
+                <div class="col-lg-13">
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane active">
+                            <p><h3>
+                                applicability </h3></p>
+                        </div>
+                        <div id="panel2" class="tab-pane">
+                            <p><h3>
+                                cross_code </h3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
 {% endblock product_page %}
