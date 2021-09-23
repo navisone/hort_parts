@@ -11,31 +11,18 @@
 
     <p>
     <h2>
-        <?= Yii::t('contact', 'If you have any business queries or other questions,
-            please fill out the following form to contact us. Thank you.') ?>
+        {% trans 'If you have any business queries or other questions,
+            please fill out the following form to contact us. Thank you.' %}
     </h2></p>
 
     <form role="form">
         <div class="form-group">
-            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-
-            <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
-            <?= $form->field($model, 'email')->input('email') ?>
-
-            <?= $form->field($model, 'subject') ?>
-
-            <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
-
-            <?php echo $form->field($model, 'verifyCode')->widget(ReCaptcha::className()) ?>
-
+            
             <div class="form-group">
-                <?= Html::submitButton(Yii::t('contact','SEND A SHEET'), ['class' => 'btn btn-primary', 'name' =>
-                'contact-button']) ?>
+               SEND A SHEET
             </div>
 
-            <?php ActiveForm::end(); ?>
-
+            
             <br/>
             <br/>
             <br/>
