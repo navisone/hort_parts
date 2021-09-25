@@ -24,7 +24,7 @@ class NewsDetailView(DetailView):
     template_name = 'hort_parts/news/news_detail.html'
 
 
-class AboutUsView(ListView):
+class AboutView(ListView):
     model = Content
     queryset = Content.objects.filter(category_id=2)
     context_object_name = 'about_list'
