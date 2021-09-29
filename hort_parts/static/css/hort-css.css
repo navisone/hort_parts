@@ -1159,3 +1159,7 @@ html .vw5-homeStyleguideConformStageHeadline .vw5-homeStyleguideConformStageHead
 .vw5-homeStyleguideConformStageButton__innerButton {
     display: block
 }
+
+.bg1 {
+    background-image: url("../images/intro_bg.png");
+}
