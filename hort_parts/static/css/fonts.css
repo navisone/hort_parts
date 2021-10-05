@@ -1,11 +1,4 @@
-/* ===================================================================
- * fonts.scss)
- *
- * ------------------------------------------------------------------- */
- 
-/*
- * Libre Baskerville 
-================================================================================ */
+
 @font-face {
   font-family: "librebaskerville-regular";
   src: url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
