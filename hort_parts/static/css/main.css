@@ -1771,7 +1771,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 
-
 /* ===================================================================
  *  11. about - (_layout.scss)
  *
@@ -1790,12 +1789,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #ff0000;
 }
 #about h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 3rem;
-  line-height: 1.667;
-  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #303334;
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: .5rem;
   position: relative;
 }
 #about h3::before {
@@ -1905,12 +1904,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   color: #07617d;
 }
 #products h3 {
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.667;
-  color: #07617d;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #303334;
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: .5rem;
   position: relative;
 }
 #products h3::before {
@@ -1994,7 +1993,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     font-size: 2.3rem;
   }
 }
-
 
 /* ===================================================================
  *  12. services - (_layout.scss)
@@ -2113,7 +2111,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     padding: 0;
   }
 }
-
 
 /* ===================================================================
  *  13. portfolio - (_layout.scss)
