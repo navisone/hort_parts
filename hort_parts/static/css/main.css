@@ -1787,13 +1787,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   max-width: 850px;
 }
 #about span {
-  color: #07617d;
+  color: #ff0000;
 }
 #about h3 {
   font-family: "montserrat-bold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 3rem;
   line-height: 1.667;
-  color: #07617d;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: .3rem;
   position: relative;
@@ -1808,10 +1808,17 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1.8;
   color: #2e383f;
-  margin-top: 6rem;
+  margin-top: 5rem;
+}
+
+#about ul li {
+  font-family: "librebaskerville-bold", serif;
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: #2e383f;
 }
 
 /* ------------------------------------------------------------------- 
