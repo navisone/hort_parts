@@ -1783,7 +1783,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: center;
 }
 #about .about-wrap {
-  max-width: 850px;
+  max-width: 100%;
 }
 #about span {
   color: #ff0000;
@@ -1892,13 +1892,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #products {
   position: relative;
-  padding: 4.2rem 0 12rem;
+  padding-top: 4.2rem;
   background-color: #FFFFFF;
   min-height: 696px;
   text-align: center;
 }
 #products .about-wrap {
-  max-width: 850px;
+  max-width: 100%;
 }
 #products span {
   color: #07617d;
