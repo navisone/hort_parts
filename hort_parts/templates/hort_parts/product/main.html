@@ -1,11 +1,46 @@
 {% extends 'hort_parts/main.html' %}
 {% load static i18n hort_tag %}
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+    {% block title_page %}
+    {% endblock %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="The official website of autoparts trademark Hort, Auto Parts Hort">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flag-icon.css' %}">
+
+</head>
+
+<body class="template-collection belle">
 {% block content_page %}
 
-    {% block product_page %}
+{% block product_page %}
+{% endblock product_page %}
 
-    {% endblock product_page %}
+{% include 'hort_parts/include/footer.html' %}
 
 {% endblock content_page %}
+
+<script src="{% static 'js/vendor/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.cookie.js' %}"></script>
+<script src="{% static 'js/vendor/modernizr-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/wow.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/lazysizes.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
