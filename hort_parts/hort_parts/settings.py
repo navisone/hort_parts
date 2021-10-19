@@ -75,11 +75,11 @@ WSGI_APPLICATION = 'hort_parts.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'mydatabase',
-#         'USER': 'mydatabaseuser',
-#         'PASSWORD': 'mypassword',
-#         'HOST': '127.0.0.1',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'decort_shop',
+#         'USER': 'torsion_prog',
+#         'PASSWORD': 'sdr%7ujK',
+#         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
