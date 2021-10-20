@@ -12,12 +12,13 @@ class LoadData:
         session.auth = HTTPBasicAuth('Robot', 'Robot')
         transport = Transport(session=session, timeout=600)
         settings = Settings(xml_huge_tree=True)
-        self.client = Client('http://192.168.75.115:8005/live/ws/decort?wsdl', transport=transport, settings=settings)
+        self.client = Client('http://192.168.75.115:8005/live/ws/navis_hort?wsdl', transport=transport,
+                             settings=settings)
 
         self.conn = psycopg2.connect(
             host="localhost",
             port="5432",
-            database="decort_shop",
+            database="hort_parts",
             user="torsion_prog",
             password="sdr%7ujK")
 
@@ -30,14 +31,11 @@ class LoadData:
 
         cur = self.conn.cursor()
 
-        t_sql = '''CREATE TEMP TABLE shop_product_buffer (
+        t_sql = '''CREATE TEMP TABLE hort_product_buffer (
             source_id character varying(300),
             name_ru character varying(500),
             name_uk character varying(500),
             name_en character varying(500),
-            comment_ru character varying(500),
-            comment_uk character varying(500),
-            comment_en character varying(500),
             article character varying(300),
             specification character varying(300),
             advanced_description text   );'''
@@ -45,36 +43,34 @@ class LoadData:
         self.conn.commit()
 
         with open('cache/products.csv', 'r', encoding='utf-8') as file:
-            cur.copy_from(file, 'shop_product_buffer',
+            cur.copy_from(file, 'hort_product_buffer',
                           columns=(
-                              'source_id', 'name_ru', 'name_uk', 'name_en', 'comment_ru', 'comment_uk', 'comment_en',
+                              'source_id', 'name_ru', 'name_uk', 'name_en',
                               'article', 'specification', 'advanced_description'),
                           sep='|')
         self.conn.commit()
 
-        ins_sql = '''INSERT INTO shop_product (source_id, code)
-        SELECT source_id, code FROM shop_product_buffer
-        WHERE source_id NOT IN (SELECT source_id FROM shop_product WHERE source_id IS NOT NULL);'''
+        ins_sql = '''INSERT INTO hort_product (source_id, slug)
+        SELECT source_id, article FROM hort_product_buffer
+        WHERE source_id NOT IN (SELECT source_id FROM hort_product WHERE source_id IS NOT NULL);'''
         cur.execute(ins_sql)
         self.conn.commit()
 
-        del_sql = '''DELETE FROM shop_product
-        WHERE source_id NOT IN (SELECT source_id FROM shop_product_buffer);'''
+        del_sql = '''DELETE FROM hort_product
+        WHERE source_id NOT IN (SELECT source_id FROM hort_product_buffer);'''
         cur.execute(del_sql)
         self.conn.commit()
 
-        copy_sql = '''UPDATE shop_product p
+        copy_sql = '''UPDATE hort_product p
             SET               
                 name_ru = b.name_ru,
                 name_uk = b.name_uk,
                 name_en = b.name_en,
-                comment_ru = b.comment_ru,
-                comment_uk = b.comment_uk,
-                comment_en = b.comment_en,
                 article = b.article,
+                slug = b.article,
                 specification = b.specification,
                 advanced_description = b.advanced_description                                      
-            FROM shop_product_buffer b
+            FROM hort_product_buffer b
             WHERE p.source_id = b.source_id;'''
         cur.execute(copy_sql)
         self.conn.commit()
@@ -113,7 +109,7 @@ class LoadData:
 
         upd_sql = '''UPDATE products_cross s
             SET product_id_id = c.id                               
-            FROM shop_product c
+            FROM hort_product c
             WHERE s.product = c.source_id;'''
         cur.execute(upd_sql)
         self.conn.commit()
@@ -121,6 +117,6 @@ class LoadData:
 
 LoadData = LoadData()
 LoadData.load_products()
-# LoadDataShop.load_cross()
+# LoadData.load_cross()
 
 print('Load Data')
