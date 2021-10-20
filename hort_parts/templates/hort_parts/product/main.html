@@ -1,4 +1,3 @@
-{% extends 'hort_parts/main.html' %}
 {% load static i18n hort_tag %}
 
 <!DOCTYPE html>
@@ -23,14 +22,11 @@
 </head>
 
 <body class="template-collection belle">
-{% block content_page %}
 
 {% block product_page %}
 {% endblock product_page %}
 
-{% include 'hort_parts/include/footer.html' %}
-
-{% endblock content_page %}
+{% include 'hort_parts/product/footer.html' %}
 
 <script src="{% static 'js/vendor/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'js/vendor/jquery.cookie.js' %}"></script>
