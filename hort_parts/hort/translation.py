@@ -4,7 +4,7 @@ from .models import Product, ContentCategory, Category, Content
 
 @register(Category)
 class CategoryTranslationOptions(TranslationOptions):
-    fields = ('name', 'comment')
+    fields = ('name', 'info', 'comment')
 
 
 @register(Product)

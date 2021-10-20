@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django import forms
 from modeltranslation.admin import TranslationAdmin
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
@@ -15,9 +14,21 @@ class ContentAdminForm(forms.ModelForm):
     full_text_ru = forms.CharField(widget=CKEditorUploadingWidget())
     full_text_uk = forms.CharField(widget=CKEditorUploadingWidget())
     full_text_en = forms.CharField(widget=CKEditorUploadingWidget())
+    full_text_de = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Content
+        fields = '__all__'
+
+
+class CategoryAdminForm(forms.ModelForm):
+    info_ru = forms.CharField(widget=CKEditorUploadingWidget())
+    info_uk = forms.CharField(widget=CKEditorUploadingWidget())
+    info_en = forms.CharField(widget=CKEditorUploadingWidget())
+    info_de = forms.CharField(widget=CKEditorUploadingWidget())
+
+    class Meta:
+        model = Category
         fields = '__all__'
 
 
