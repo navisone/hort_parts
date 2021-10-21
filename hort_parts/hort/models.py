@@ -7,6 +7,7 @@ class Category(models.Model):
     info = models.TextField("Info", null=True, blank=True)
     comment = models.CharField(max_length=300, null=True, blank=True)
     url = models.SlugField(max_length=300, unique=True)
+    image = models.ImageField(upload_to="catalog_image/", null=True, blank=True)
 
     def __str__(self):
         return str(self.url)
