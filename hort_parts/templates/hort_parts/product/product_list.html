@@ -263,50 +263,6 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="lvl1 parent dropdown"><a href="#">Pages <i class="anm anm-angle-down-l"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="cart-variant1.html" class="site-nav">Cart Page <i
-                                            class="anm anm-angle-right-l"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="cart-variant1.html" class="site-nav">Cart Variant1</a></li>
-                                            <li><a href="cart-variant2.html" class="site-nav">Cart Variant2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="compare-variant1.html" class="site-nav">Compare Product <i
-                                            class="anm anm-angle-right-l"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="compare-variant1.html" class="site-nav">Compare Variant1</a>
-                                            </li>
-                                            <li><a href="compare-variant2.html" class="site-nav">Compare Variant2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="checkout.html" class="site-nav">Checkout</a></li>
-                                    <li><a href="about-us.html" class="site-nav">About Us <span class="lbl nm_label1">New</span>
-                                    </a></li>
-                                    <li><a href="contact-us.html" class="site-nav">Contact Us</a></li>
-                                    <li><a href="faqs.html" class="site-nav">FAQs</a></li>
-                                    <li><a href="lookbook1.html" class="site-nav">Lookbook<i
-                                            class="anm anm-angle-right-l"></i></a>
-                                        <ul>
-                                            <li><a href="lookbook1.html" class="site-nav">Style 1</a></li>
-                                            <li><a href="lookbook2.html" class="site-nav">Style 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="404.html" class="site-nav">404</a></li>
-                                    <li><a href="coming-soon.html" class="site-nav">Coming soon <span
-                                            class="lbl nm_label1">New</span> </a></li>
-                                </ul>
-                            </li>
-                            <li class="lvl1 parent dropdown"><a href="#">Blog <i class="anm anm-angle-down-l"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a></li>
-                                    <li><a href="blog-fullwidth.html" class="site-nav">Fullwidth</a></li>
-                                    <li><a href="blog-grid-view.html" class="site-nav">Gridview</a></li>
-                                    <li><a href="blog-article.html" class="site-nav">Article</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </nav>
                     <!--End Desktop Menu-->
@@ -495,15 +451,6 @@
                             class="lbl nm_label1">New</span></a></li>
                 </ul>
             </li>
-            <li class="lvl1 parent megamenu"><a href="blog-left-sidebar.html">Blog <i class="anm anm-plus-l"></i></a>
-                <ul>
-                    <li><a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a></li>
-                    <li><a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a></li>
-                    <li><a href="blog-fullwidth.html" class="site-nav">Fullwidth</a></li>
-                    <li><a href="blog-grid-view.html" class="site-nav">Gridview</a></li>
-                    <li><a href="blog-article.html" class="site-nav">Article</a></li>
-                </ul>
-            </li>
         </ul>
     </div>
     <!--End Mobile Menu-->
@@ -514,7 +461,7 @@
         <div class="collection-header">
             <div class="collection-hero">
                 <div class="collection-hero__image">
-                    <img data-src="assets/images/cat-women3.jpg" src="assets/images/cat-women3.jpg"/>
+                    <img data-src="{{ category.image.url }}" src="{{ category.image.url }}"/>
                 </div>
                 <div class="collection-hero__title-wrapper">
                     <h1 class="collection-hero__title page-width">{{ category.name }}</h1></div>
@@ -533,27 +480,9 @@
                             <div class="widget-title"><h2>Categories</h2></div>
                             <div class="widget-content">
                                 <ul class="sidebar_categories">
-                                    <li class="level1 sub-level"><a href="#;" class="site-nav">Clothing</a>
-                                        <ul class="sublinks">
-                                            <li class="level2"><a href="#;" class="site-nav">Men</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">Women</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">Child</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">View All Clothing</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="level1 sub-level"><a href="#;" class="site-nav">Jewellery</a>
-                                        <ul class="sublinks">
-                                            <li class="level2"><a href="#;" class="site-nav">Ring</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">Neckalses</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">Eaarings</a></li>
-                                            <li class="level2"><a href="#;" class="site-nav">View All Jewellery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="lvl-1"><a href="#;" class="site-nav">Shoes</a></li>
-                                    <li class="lvl-1"><a href="#;" class="site-nav">Accessories</a></li>
-                                    <li class="lvl-1"><a href="#;" class="site-nav">Collections</a></li>
-                                    <li class="lvl-1"><a href="#;" class="site-nav">Sale</a></li>
-                                    <li class="lvl-1"><a href="#;" class="site-nav">Page</a></li>
+
+                                    <li class="lvl-1"><a href="#" class="site-nav">Categories</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -565,16 +494,9 @@
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
                     <div class="category-description">
                         <h3>Category Description</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing.</p>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                            Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
-                            Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
-                            word in classical literature, discovered the undoubtable source.</p>
+                        <p>
+                            {{ category.info }}
+                        </p>
                     </div>
                     <hr>
                     <div class="productList">
@@ -593,69 +515,19 @@
                                     </div>
                                 </div>
                                 <div class="list-view-item__title-column">
-                                    <div class="h4 grid-view-item__title"><a href="product-layout-2.html">Camelia
-                                        Reversible Jacket</a></div>
-                                    <!-- Product Review -->
-                                    <p class="product-review"><i class="font-13 fa fa-star"></i><i
-                                            class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i
-                                            class="font-13 fa fa-star-o"></i><i class="font-13 fa fa-star-o"></i></p>
-                                    <!-- End Product Review -->
+                                    <div class="h4 grid-view-item__title">
+                                        <a href="product-layout-2.html">Camelia Reversible Jacket</a></div>
                                     <!-- Sort Description -->
                                     <p>Belle Multipurpose Bootstrap 4 Html Template that will give you and your
                                         customers a smooth shopping experience which can be used for various kinds of
                                         stores such as boutiques, bookstores, technology stores, jewelries and other
                                         types of web shops....</p>
                                     <!-- End Sort Description -->
-                                    <!-- Price -->
-                                    <p class="product-price grid-view-item__meta">
-                                        <span class="old-price">$600.00</span>
-                                        <span class="product-price__price product-price__sale"><span class="money">$500.00</span></span>
-                                    </p>
-                                    <!-- End Price -->
                                     <form class="variants" action="#">
                                         <button class="btn btn--small" type="button">Select Options</button>
                                     </form>
                                 </div>
                             </div>
-                            <!--End ListView Item-->
-                            <!--ListView Item-->
-                            <div class="list-product list-view-item">
-                                <div class="list-view-item__image-column">
-                                    <div class="list-view-item__image-wrapper">
-                                        <!-- Image -->
-                                        <a href="product-layout-2.html"><img
-                                                class="list-view-item__image blur-up lazyload"
-                                                data-src="assets/images/product-images/product-image25.jpg"
-                                                src="assets/images/product-images/product-image25.jpg" alt="image"
-                                                title="product"></a>
-                                        <!-- End Image -->
-                                    </div>
-                                </div>
-                                <div class="list-view-item__title-column">
-                                    <div class="h4 grid-view-item__title"><a href="product-layout-2.html">ACB Top</a>
-                                    </div>
-                                    <!-- Product Review -->
-                                    <p class="product-review"><i class="font-13 fa fa-star"></i><i
-                                            class="font-13 fa fa-star"></i><i class="font-13 fa fa-star-o"></i><i
-                                            class="font-13 fa fa-star-o"></i><i class="font-13 fa fa-star-o"></i></p>
-                                    <!-- End Product Review -->
-                                    <!-- Sort Description -->
-                                    <p>Belle Multipurpose Bootstrap 4 Html Template that will give you and your
-                                        customers a smooth shopping experience which can be used for various kinds of
-                                        stores such as boutiques, bookstores, technology stores, jewelries and other
-                                        types of web shops....</p>
-                                    <!-- End Sort Description -->
-                                    <!-- Price -->
-                                    <p class="product-price grid-view-item__meta">
-                                        <span class="product-price__price"><span class="money">$280.00</span></span>
-                                    </p>
-                                    <!-- End Price -->
-                                    <form class="variants" action="#">
-                                        <button class="btn btn--small" type="button">Add To Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!--End ListView Item-->
                         </div>
                     </div>
                 </div>
