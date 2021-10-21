@@ -34,8 +34,16 @@ class CategoryAdminForm(forms.ModelForm):
 
 @admin.register(Category)
 class CategoryAdmin(TranslationAdmin):
-    list_display = ('id', 'name', 'url')
+    list_display = ('id', 'name', 'url', 'image')
     list_display_links = ('name',)
+    readonly_fields = ('get_image',)
+    save_on_top = True
+    form = CategoryAdminForm
+
+    def get_image(self, obj):
+        return mark_safe(f'<img src={obj.main_image.url} widht="50" height="60"')
+
+    get_image.short_description = 'image'
 
 
 @admin.register(ContentCategory)
