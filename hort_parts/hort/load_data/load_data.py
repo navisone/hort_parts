@@ -12,7 +12,7 @@ class LoadData:
         session.auth = HTTPBasicAuth('Robot', 'Robot')
         transport = Transport(session=session, timeout=600)
         settings = Settings(xml_huge_tree=True)
-        self.client = Client('http://192.168.75.115:8005/live/ws/navis_hort?wsdl', transport=transport,
+        self.client = Client('http://192.168.75.104/live/ws/navis_hort?wsdl', transport=transport,
                              settings=settings)
 
         self.conn = psycopg2.connect(
@@ -33,6 +33,7 @@ class LoadData:
 
         t_sql = '''CREATE TEMP TABLE hort_product_buffer (
             source_id character varying(300),
+            source_category character varying(300),
             name_ru character varying(500),
             name_uk character varying(500),
             name_en character varying(500),
@@ -45,7 +46,7 @@ class LoadData:
         with open('cache/products.csv', 'r', encoding='utf-8') as file:
             cur.copy_from(file, 'hort_product_buffer',
                           columns=(
-                              'source_id', 'name_ru', 'name_uk', 'name_en',
+                              'source_id', 'source_category', 'name_ru', 'name_uk', 'name_en',
                               'article', 'specification', 'advanced_description'),
                           sep='|')
         self.conn.commit()
@@ -62,7 +63,8 @@ class LoadData:
         self.conn.commit()
 
         copy_sql = '''UPDATE hort_product p
-            SET               
+            SET  
+                source_category = b.source_category,         
                 name_ru = b.name_ru,
                 name_uk = b.name_uk,
                 name_en = b.name_en,
@@ -73,6 +75,13 @@ class LoadData:
             FROM hort_product_buffer b
             WHERE p.source_id = b.source_id;'''
         cur.execute(copy_sql)
+        self.conn.commit()
+
+        upd_sql = '''UPDATE hort_product p
+                    SET category_id = c.id
+                    FROM hort_category c
+                    WHERE p.source_category = c.source_id;'''
+        cur.execute(upd_sql)
         self.conn.commit()
 
     def load_cross(self):
@@ -117,6 +126,6 @@ class LoadData:
 
 LoadData = LoadData()
 LoadData.load_products()
-# LoadData.load_cross()
+LoadData.load_cross()
 
 print('Load Data')

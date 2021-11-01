@@ -8,6 +8,7 @@ class Category(models.Model):
     comment = models.CharField(max_length=300, null=True, blank=True)
     url = models.SlugField(max_length=300, unique=True)
     image = models.ImageField(upload_to="catalog_image/", null=True, blank=True)
+    source_id = models.CharField(max_length=300, null=True, blank=True)
 
     def __str__(self):
         return str(self.url)
@@ -31,6 +32,7 @@ class Product(models.Model):
     is_active = models.BooleanField(default=1, null=True)
     comment = models.CharField(max_length=300, null=True, blank=True)
     slug = models.SlugField(max_length=300, unique=True)
+    source_category = models.CharField(max_length=300, null=True, blank=True)
 
     def __str__(self):
         return str(self.article)
@@ -84,3 +86,51 @@ class Content(models.Model):
     class Meta:
         verbose_name = "Content"
         verbose_name_plural = "Contents"
+
+
+class Cross(models.Model):
+    product_id = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="cross_product", null=True, blank=True)
+    brand = models.CharField(max_length=500, null=True, blank=True)
+    article_nr = models.CharField(max_length=500, null=True, blank=True)
+    product = models.CharField(max_length=500, null=True, blank=True)
+
+    def __str__(self):
+        return self.article_nr
+
+    class Meta:
+        verbose_name = "Cross"
+        verbose_name_plural = "Crosses"
+
+
+class Applicability(models.Model):
+    product_id = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="applicability_product", null=True, blank=True)
+    vehicle = models.CharField(max_length=250, null=True, blank=True)
+    modification = models.CharField(max_length=250, null=True, blank=True)
+    engine = models.CharField(max_length=250, null=True, blank=True)
+    year = models.CharField(max_length=250, null=True, blank=True)
+    product = models.CharField(max_length=500, null=True, blank=True)
+
+    def __str__(self):
+        return self.product_id
+
+    class Meta:
+        verbose_name = "Applicability"
+        verbose_name_plural = "Applicabilities"
+
+
+class Description(models.Model):
+    product_id = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="description_product", null=True, blank=True)
+    property = models.CharField(max_length=500, null=True, blank=True)
+    value = models.CharField(max_length=500, null=True, blank=True)
+    product = models.CharField(max_length=500, null=True, blank=True)
+
+    def __str__(self):
+        return self.product_id
+
+    class Meta:
+        verbose_name = "Description"
+        verbose_name_plural = "Descriptions"
+
