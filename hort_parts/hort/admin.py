@@ -78,3 +78,24 @@ class ProductAdmin(TranslationAdmin):
 class ProductImageAdmin(admin.ModelAdmin):
     list_display = ('id', 'product', 'image_url')
     list_display_links = ('product',)
+
+
+@admin.register(Cross)
+class CrossAdmin(admin.ModelAdmin):
+    list_display = ('id', 'brand', 'product_id')
+    list_display_links = ('id', 'product_id',)
+
+
+@admin.register(Applicability)
+class ApplicabilityAdmin(admin.ModelAdmin):
+    list_display = ('id', 'product_id')
+    list_display_links = ('id', 'product_id',)
+
+
+@admin.register(Description)
+class DescriptionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'product_id')
+    list_display_links = ('id', 'product_id',)
+
+
+

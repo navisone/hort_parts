@@ -124,6 +124,8 @@ class LoadData:
 
 LoadData = LoadData()
 LoadData.load_products()
-LoadData.load_cross()
+print('Load Products')
 
-print('Load Data')
+LoadData.load_cross()
+print('Load Cross')
+
