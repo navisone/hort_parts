@@ -37,6 +37,7 @@ class LoadData:
             name_ru character varying(500),
             name_uk character varying(500),
             name_en character varying(500),
+            name_de character varying(500),
             article character varying(300),
             specification character varying(300),
             advanced_description text   );'''
@@ -46,7 +47,7 @@ class LoadData:
         with open('cache/products.csv', 'r', encoding='utf-8') as file:
             cur.copy_from(file, 'hort_product_buffer',
                           columns=(
-                              'source_id', 'source_category', 'name_ru', 'name_uk', 'name_en',
+                              'source_id', 'source_category', 'name_ru', 'name_uk', 'name_en', 'name_de',
                               'article', 'specification', 'advanced_description'),
                           sep='|')
         self.conn.commit()
@@ -68,6 +69,7 @@ class LoadData:
                 name_ru = b.name_ru,
                 name_uk = b.name_uk,
                 name_en = b.name_en,
+                name_de = b.name_de,
                 article = b.article,
                 slug = b.article,
                 specification = b.specification,
