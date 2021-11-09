@@ -124,6 +124,93 @@ class LoadData:
         self.conn.commit()
 
 
+    def load_description(self):
+        description = self.client.service.GetData('description_hort')
+        data = base64.b64decode(description)
+        file = open('cache/description.csv', 'w', newline='', encoding='utf-8')
+        file.write(str(data.decode('utf-8')))
+        file.close()
+
+        cur = self.conn.cursor()
+
+        t_sql = '''CREATE TEMP TABLE hort_description_buffer (
+            product character varying(300),
+            property character varying(300), 
+            value text );'''
+        cur.execute(t_sql)
+        self.conn.commit()
+
+        with open('cache/description.csv', 'r', encoding='utf-8') as file:
+            cur.copy_from(file, 'hort_description_buffer',
+                          columns=('product', 'property', 'value'), sep='|')
+        self.conn.commit()
+
+        copy_sql = '''UPDATE hort_description p
+            SET
+                property = b.property,
+                value = b.value                         
+            FROM hort_description_buffer b
+            WHERE p.product = b.product;'''
+        cur.execute(copy_sql)
+        self.conn.commit()
+
+        upd_sql = '''UPDATE hort_description d
+            SET product_id_id = c.id                               
+            FROM hort_product c
+            WHERE d.product = c.source_id;'''
+        cur.execute(upd_sql)
+        self.conn.commit()
+
+    def load_applicability(self):
+        applicability = self.client.service.GetData('applicability_hort')
+        data = base64.b64decode(applicability)
+        file = open('cache/applicability.csv', 'w', newline='', encoding='utf-8')
+        file.write(str(data.decode('utf-8')))
+        file.close()
+
+        cur = self.conn.cursor()
+
+        t_sql = '''CREATE TEMP TABLE hort_applicability_buffer (
+            product character varying(300),
+            vehicle character varying(300),
+            modification character varying(300), 
+            engine character varying(300), 
+            year character varying(300) );'''
+        cur.execute(t_sql)
+        self.conn.commit()
+
+        with open('cache/applicability.csv', 'r', encoding='utf-8') as file:
+            cur.copy_from(file, 'hort_applicability_buffer',
+                          columns=('product', 'vehicle', 'modification', 'engine', 'year'), sep='|')
+        self.conn.commit()
+
+        copy_sql = '''UPDATE hort_applicability p
+            SET
+                vehicle = b.vehicle,
+                modification = b.modification,
+                engine = b.engine,
+                year = b.year                         
+            FROM hort_applicability_buffer b
+            WHERE p.product = b.product;'''
+        cur.execute(copy_sql)
+        self.conn.commit()
+
+        upd_sql = '''UPDATE hort_applicability a
+            SET product_id_id = c.id                               
+            FROM hort_product c
+            WHERE a.product = c.source_id;'''
+        cur.execute(upd_sql)
+        self.conn.commit()
+
+
+    def load_product_images(self):
+        deficit = self.client.service.GetData('product_images_hort')
+        data = base64.b64decode(deficit)
+        file = open('cache/product_images.csv', 'w', newline='', encoding='utf-8')
+        file.write(str(data.decode('utf-8')))
+        file.close()
+
+
 LoadData = LoadData()
 LoadData.load_products()
 print('Load Products')
@@ -131,3 +218,11 @@ print('Load Products')
 LoadData.load_cross()
 print('Load Cross')
 
+LoadData.load_description()
+print('Load Description')
+
+LoadData.load_applicability()
+print('Load Applicability')
+
+LoadData.load_product_images()
+print('Load Images')
