@@ -107,6 +107,17 @@ class LoadData:
                           columns=('product', 'brand', 'article_nr'), sep='|')
         self.conn.commit()
 
+        ins_sql = '''INSERT INTO hort_cross (product)
+                SELECT product FROM hort_cross_buffer
+                WHERE product NOT IN (SELECT product FROM hort_cross WHERE product IS NOT NULL);'''
+        cur.execute(ins_sql)
+        self.conn.commit()
+
+        del_sql = '''DELETE FROM hort_cross
+                WHERE product NOT IN (SELECT product FROM hort_cross_buffer);'''
+        cur.execute(del_sql)
+        self.conn.commit()
+
         copy_sql = '''UPDATE hort_cross p
             SET
                 brand = b.brand,
@@ -122,7 +133,6 @@ class LoadData:
             WHERE s.product = c.source_id;'''
         cur.execute(upd_sql)
         self.conn.commit()
-
 
     def load_description(self):
         description = self.client.service.GetData('description_hort')
@@ -143,6 +153,17 @@ class LoadData:
         with open('cache/description.csv', 'r', encoding='utf-8') as file:
             cur.copy_from(file, 'hort_description_buffer',
                           columns=('product', 'property', 'value'), sep='|')
+        self.conn.commit()
+
+        ins_sql = '''INSERT INTO hort_description (product)
+                        SELECT product FROM hort_description_buffer
+                        WHERE product NOT IN (SELECT product FROM hort_description WHERE product IS NOT NULL);'''
+        cur.execute(ins_sql)
+        self.conn.commit()
+
+        del_sql = '''DELETE FROM hort_description
+                        WHERE product NOT IN (SELECT product FROM hort_description_buffer);'''
+        cur.execute(del_sql)
         self.conn.commit()
 
         copy_sql = '''UPDATE hort_description p
@@ -184,6 +205,17 @@ class LoadData:
                           columns=('product', 'vehicle', 'modification', 'engine', 'year'), sep='|')
         self.conn.commit()
 
+        ins_sql = '''INSERT INTO hort_applicability (product)
+                        SELECT product FROM hort_applicability_buffer
+                        WHERE product NOT IN (SELECT product FROM hort_applicability WHERE product IS NOT NULL);'''
+        cur.execute(ins_sql)
+        self.conn.commit()
+
+        del_sql = '''DELETE FROM hort_applicability
+                        WHERE product NOT IN (SELECT product FROM hort_applicability_buffer);'''
+        cur.execute(del_sql)
+        self.conn.commit()
+
         copy_sql = '''UPDATE hort_applicability p
             SET
                 vehicle = b.vehicle,
@@ -202,13 +234,52 @@ class LoadData:
         cur.execute(upd_sql)
         self.conn.commit()
 
-
     def load_product_images(self):
-        deficit = self.client.service.GetData('product_images_hort')
-        data = base64.b64decode(deficit)
+        product_images = self.client.service.GetData('product_images_hort')
+        data = base64.b64decode(product_images)
         file = open('cache/product_images.csv', 'w', newline='', encoding='utf-8')
         file.write(str(data.decode('utf-8')))
         file.close()
+
+        cur = self.conn.cursor()
+
+        t_sql = '''CREATE TEMP TABLE hort_productimage_buffer (
+                    source_product character varying(300),
+                    image_url character varying(300) );'''
+        cur.execute(t_sql)
+        self.conn.commit()
+
+        with open('cache/product_images.csv', 'r', encoding='utf-8') as file:
+            cur.copy_from(file, 'hort_productimage_buffer',
+                          columns=('source_product', 'image_url'), sep='|')
+        self.conn.commit()
+
+        ins_sql = '''INSERT INTO hort_productimage (source_product)
+                        SELECT source_product FROM hort_productimage_buffer
+                        WHERE source_product NOT IN (SELECT source_product FROM hort_productimage 
+                        WHERE source_product IS NOT NULL);'''
+        cur.execute(ins_sql)
+        self.conn.commit()
+
+        del_sql = '''DELETE FROM hort_productimage
+                        WHERE source_product NOT IN (SELECT source_product FROM hort_productimage_buffer);'''
+        cur.execute(del_sql)
+        self.conn.commit()
+
+        copy_sql = '''UPDATE hort_productimage p
+                    SET
+                        image_url = b.image_url                         
+                    FROM hort_productimage_buffer b
+                    WHERE p.source_product = b.source_product;'''
+        cur.execute(copy_sql)
+        self.conn.commit()
+
+        upd_sql = '''UPDATE hort_productimage a
+                    SET product_id = c.id                               
+                    FROM hort_product c
+                    WHERE a.source_product = c.source_id;'''
+        cur.execute(upd_sql)
+        self.conn.commit()
 
 
 LoadData = LoadData()
