@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin-view/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('i18n/', include('django.conf.urls.i18n')),
+    path('i18n/', include('django_translation_flags.urls')),
 ]
 
 urlpatterns += i18n_patterns(
