@@ -68,20 +68,6 @@
                                    data-size="1462x2048"></a>
                                 <a href="assets/images/product-detail-page/camelia-reversible7-big.jpg"
                                    data-size="1462x2048"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big4.jpg"
-                                   data-size="1462x2048"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big5.jpg"
-                                   data-size="1462x2048"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big6.jpg"
-                                   data-size="731x1024"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big7.jpg"
-                                   data-size="731x1024"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big8.jpg"
-                                   data-size="731x1024"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big9.jpg"
-                                   data-size="731x1024"></a>
-                                <a href="assets/images/product-detail-page/camelia-reversible-big10.jpg"
-                                   data-size="731x1024"></a>
                             </div>
 
                         </div>
@@ -92,8 +78,8 @@
                         </div>
                         <div class="product-single__description rte">
                             <ul>
-                                <li>Article: {{ product.article }}</li>
-                                <li>Specification: {{ product.specification }}</li>
+                                <li>{% trans 'Article' %}: {{ product.article }}</li>
+                                <li>{% trans 'Specification' %}: {{ product.specification }}</li>
                             </ul>
                         </div>
 
@@ -106,10 +92,9 @@
             <!--Product Tabs-->
             <div class="tabs-listing">
                 <ul class="product-tabs">
-                    <li rel="tab1"><a class="tablink">Cross Code</a></li>
-                    <li rel="tab2"><a class="tablink">Product Reviews</a></li>
-                    <li rel="tab3"><a class="tablink">Size Chart</a></li>
-                    <li rel="tab4"><a class="tablink">Shipping &amp; Returns</a></li>
+                    <li rel="tab1"><a class="tablink">{% trans 'Cross Code' %}</a></li>
+                    <li rel="tab2"><a class="tablink">{% trans 'Applicability' %}</a></li>
+                    <li rel="tab3"><a class="tablink">{% trans 'Description' %}</a></li>
                 </ul>
                 <div class="tab-container">
                     <div id="tab1" class="tab-content">
@@ -126,38 +111,6 @@
                                 <li>Lorem Ipsum is not simply random text.</li>
                                 <li>Free theme updates</li>
                             </ul>
-                            <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
-                            <p>You can change the position of any sections such as slider, banner, products, collection
-                                and so on by just dragging and dropping.&nbsp;</p>
-                            <h3>Lorem Ipsum is not simply random text.</h3>
-                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will give you a complete account of the system, and expound the
-                                actual teachings of the great explorer of the truth, the master-builder of human
-                                happiness.</p>
-                            <p>Change colors, fonts, banners, megamenus and more. Preview changes are live before saving
-                                them.</p>
-                            <h3>1914 translation by H. Rackham</h3>
-                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will give you a complete account of the system, and expound the
-                                actual teachings of the great explorer of the truth, the master-builder of human
-                                happiness.</p>
-                            <h3>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                                occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                                mollitia animi, id est laborum et dolorum fuga.</p>
-                            <h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
-                            <p>You can use variant style from colors, images or variant images. Also available differnt
-                                type of design styles and size.</p>
-                            <h3>Lorem Ipsum is not simply random text.</h3>
-                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                                pain was born and I will give you a complete account of the system, and expound the
-                                actual teachings of the great explorer of the truth, the master-builder of human
-                                happiness.</p>
-                            <h3>Proin ut lacus eget elit molestie posuere.</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled.</p>
                         </div>
                     </div>
 
@@ -239,93 +192,12 @@
                                             </fieldset>
                                         </form>
                                     </div>
-                                    <div class="spr-reviews">
-                                        <div class="spr-review">
-                                            <div class="spr-review-header">
-                                                <span class="product-review spr-starratings spr-review-header-starratings"><span
-                                                        class="reviewLink"><i class="fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i></span></span>
-                                                <h3 class="spr-review-header-title">Lorem ipsum dolor sit amet</h3>
-                                                <span class="spr-review-header-byline"><strong>dsacc</strong> on
-                                                    <strong>Apr 09, 2019</strong></span>
-                                            </div>
-                                            <div class="spr-review-content">
-                                                <p class="spr-review-content-body">Lorem ipsum dolor sit amet,
-                                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat.</p>
-                                            </div>
-                                        </div>
-                                        <div class="spr-review">
-                                            <div class="spr-review-header">
-                                                <span class="product-review spr-starratings spr-review-header-starratings"><span
-                                                        class="reviewLink"><i class="fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i></span></span>
-                                                <h3 class="spr-review-header-title">Lorem Ipsum is simply dummy text of
-                                                    the printing</h3>
-                                                <span class="spr-review-header-byline"><strong>larrydude</strong> on
-                                                    <strong>Dec 30, 2018</strong></span>
-                                            </div>
 
-                                            <div class="spr-review-content">
-                                                <p class="spr-review-content-body">Sed ut perspiciatis unde omnis iste
-                                                    natus error sit voluptatem accusantium doloremque laudantium, totam
-                                                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                                    architecto beatae vitae dicta sunt explicabo.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="spr-review">
-                                            <div class="spr-review-header">
-                                                <span class="product-review spr-starratings spr-review-header-starratings"><span
-                                                        class="reviewLink"><i class="fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i><i
-                                                        class="font-13 fa fa-star"></i></span></span>
-                                                <h3 class="spr-review-header-title">Neque porro quisquam est qui dolorem
-                                                    ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
-                                                <span class="spr-review-header-byline"><strong>quoctri1905</strong> on
-                                                    <strong>Dec 30, 2018</strong></span>
-                                            </div>
-
-                                            <div class="spr-review-content">
-                                                <p class="spr-review-content-body">Lorem Ipsum is simply dummy text of
-                                                    the printing and typesetting industry. Lorem Ipsum has been the
-                                                    industry's standard dummy text ever since the 1500s, when an unknown
-                                                    printer took a galley of type and scrambled.<br>
-                                                    <br>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.</p>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div id="tab4" class="tab-content">
-                        <h4>Returns Policy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eros justo, accumsan non dui
-                            sit amet. Phasellus semper volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non,
-                            mattis sollicitudin purus. Mauris consequat justo a enim interdum, in consequat dolor
-                            accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.</p>
-                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet
-                            pharetra erat aliquet ac.</p>
-                        <h4>Shipping</h4>
-                        <p>Pellentesque ultrices ut sem sit amet lacinia. Sed nisi dui, ultrices ut turpis pulvinar. Sed
-                            fringilla ex eget lorem consectetur, consectetur blandit lacus varius. Duis vel scelerisque
-                            elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia ullamcorper massa,
-                            a fermentum arcu vehicula ut. Ut efficitur faucibus dui Nullam tristique dolor eget turpis
-                            consequat varius. Quisque a interdum augue. Nam ut nibh mauris.</p>
-                    </div>
                 </div>
             </div>
             <!--End Product Tabs-->

@@ -30,7 +30,7 @@
                     <div class="sidebar_tags">
                         <!--Categories-->
                         <div class="sidebar_widget categories filter-widget">
-                            <div class="widget-title"><h2>Categories</h2></div>
+                            <div class="widget-title"><h2>{% trans 'Categories' %}</h2></div>
                             <div class="widget-content">
                                 <ul class="sidebar_categories">
                                     {% for c in categories %}
@@ -49,7 +49,7 @@
                 <!--Main Content-->
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
                     <div class="category-description">
-                        <h3>Category Description</h3>
+                        <h3>{% trans 'Category Description' %}</h3>
                         <p>
                             {{ category.info|safe }}
                         </p>
@@ -74,11 +74,11 @@
                                     <div class="h4 grid-view-item__title">
                                         <a href="{{ p.get_absolute_url }}">{{ p.name }}</a></div>
                                     <!-- Sort Description -->
-                                    <p><a href="{{ p.get_absolute_url }}">Article: {{ p.article }}</a></p>
-                                    <p><a href="{{ p.get_absolute_url }}">Specification: {{ p.specification }}</a></p>
+                                    <p><a href="{{ p.get_absolute_url }}">{% trans 'Article' %}: {{ p.article }}</a></p>
+                                    <p><a href="{{ p.get_absolute_url }}">{% trans 'Specification' %}: {{ p.specification }}</a></p>
                                     <!-- End Sort Description -->
                                     <form class="variants" action="#">
-                                        <button class="btn btn--small" type="button">Select Options</button>
+                                        <button class="btn btn--small" type="button">{% trans 'In detail' %}</button>
                                     </form>
                                 </div>
                             </div>
