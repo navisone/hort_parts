@@ -46,30 +46,23 @@ class CategoryAdmin(TranslationAdmin):
     get_image.short_description = 'image'
 
 
-@admin.register(ContentCategory)
-class ContentCategoryAdmin(TranslationAdmin):
-    list_display = ('id', 'name', 'url')
+@admin.register(Commercial)
+class CommercialAdmin(TranslationAdmin):
+    list_display = ('id', 'name', 'category', 'url', 'image')
     list_display_links = ('name',)
-
-
-@admin.register(Content)
-class ContentAdmin(TranslationAdmin):
-    list_display = ('id', 'title', 'alias', 'category_id', 'main_image', 'published')
-    list_filter = ('category_id',)
-    list_display_links = ('title',)
-    readonly_fields = ('get_main_image',)
+    readonly_fields = ('get_image',)
     save_on_top = True
-    form = ContentAdminForm
+    form = CategoryAdminForm
 
-    def get_main_image(self, obj):
+    def get_image(self, obj):
         return mark_safe(f'<img src={obj.main_image.url} widht="50" height="60"')
 
-    get_main_image.short_description = 'image'
+    get_image.short_description = 'image'
 
 
 @admin.register(Product)
 class ProductAdmin(TranslationAdmin):
-    list_display = ('id', 'name', 'article', 'specification', 'category', 'slug', 'is_active')
+    list_display = ('id', 'name', 'article', 'specification', 'category', 'commercial', 'slug', 'is_active')
     list_display_links = ('name', 'article',)
     search_fields = ('name', 'article',)
 
@@ -98,4 +91,23 @@ class DescriptionAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'product_id',)
 
 
+@admin.register(ContentCategory)
+class ContentCategoryAdmin(TranslationAdmin):
+    list_display = ('id', 'name', 'url')
+    list_display_links = ('name',)
+
+
+@admin.register(Content)
+class ContentAdmin(TranslationAdmin):
+    list_display = ('id', 'title', 'alias', 'category_id', 'main_image', 'published')
+    list_filter = ('category_id',)
+    list_display_links = ('title',)
+    readonly_fields = ('get_main_image',)
+    save_on_top = True
+    form = ContentAdminForm
+
+    def get_main_image(self, obj):
+        return mark_safe(f'<img src={obj.main_image.url} widht="50" height="60"')
+
+    get_main_image.short_description = 'image'
 
