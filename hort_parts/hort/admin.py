@@ -34,7 +34,7 @@ class CategoryAdminForm(forms.ModelForm):
 
 @admin.register(Category)
 class CategoryAdmin(TranslationAdmin):
-    list_display = ('id', 'name', 'url', 'image')
+    list_display = ('id', 'name', 'url', 'image', 'source_category')
     list_display_links = ('name',)
     readonly_fields = ('get_image',)
     save_on_top = True
