@@ -295,14 +295,14 @@ LoadData = LoadData()
 LoadData.load_products()
 print('Load Products')
 
-LoadData.load_cross()
-print('Load Cross')
-
-LoadData.load_description()
-print('Load Description')
-
-LoadData.load_applicability()
-print('Load Applicability')
+# LoadData.load_cross()
+# print('Load Cross')
+#
+# LoadData.load_description()
+# print('Load Description')
+#
+# LoadData.load_applicability()
+# print('Load Applicability')
 
 LoadData.load_product_images()
 print('Load Images')
