@@ -1,5 +1,5 @@
 {% extends 'hort_parts/product/main.html' %}
-{% load static i18n hort_tag %}
+{% load static i18n flags hort_tag %}
 {% block  title_page %}
 <title>Hort - {{ category.name }} </title>
 {% endblock title_page %}
@@ -71,14 +71,18 @@
                                     </div>
                                 </div>
                                 <div class="list-view-item__title-column">
-                                    <div class="h4 grid-view-item__title">
+                                    <div class="h2 grid-view-item__title">
                                         <a href="{{ p.get_absolute_url }}">{{ p.name }}</a></div>
                                     <!-- Sort Description -->
                                     <p><a href="{{ p.get_absolute_url }}">{% trans 'Article' %}: {{ p.article }}</a></p>
-                                    <p><a href="{{ p.get_absolute_url }}">{% trans 'Specification' %}: {{ p.specification }}</a></p>
+                                    <p><a href="{{ p.get_absolute_url }}">
+                                        {% trans 'Specification' %}: {{ p.specification }}</a></p>
                                     <!-- End Sort Description -->
                                     <form class="variants" action="#">
-                                        <button class="btn btn--small" type="button">{% trans 'In detail' %}</button>
+                                        <a href="{{ p.get_absolute_url }}">
+                                            <button class="btn btn--small" type="button">{% trans 'In detail' %}
+                                            </button>
+                                        </a>
                                     </form>
                                 </div>
                             </div>

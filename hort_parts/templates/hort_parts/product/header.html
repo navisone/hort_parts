@@ -1,4 +1,4 @@
-{% load static i18n hort_tag %}
+{% load static i18n flags hort_tag %}
 
 <!--Search Form Drawer-->
 <div class="search">
@@ -45,11 +45,15 @@
                                         <ul class="grid">
                                             <li class="grid__item lvl-1 col-md-3 col-lg-3">
                                                 <a href="#" class="site-nav lvl-1">
-                                                    Product Page</a>
+                                                    {% trans 'SUSPENSION' %}</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
                                                         <a href="#" class="site-nav lvl-2">
-                                                            Product Layout 1</a>
+                                                            SHOCK ABSORBERS</a>
+                                                    </li>
+                                                    <li class="lvl-2">
+                                                        <a href="#" class="site-nav lvl-2">
+                                                            SUSPENSION SPRINGS</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -65,10 +69,22 @@
 
                                         </ul>
                                     </li>
-
                                 </ul>
                             </div>
                         </li>
+
+                        <li class="lvl1 parent megamenu">
+                            <a href="/#about">{% trans 'About Us' %}</a>
+                        </li>
+                        <li class="lvl1 parent megamenu">
+                            <a href="{% url 'hort:home' %}">{% trans 'Warranty' %}</a>
+                        </li>
+                        <li class="lvl1 parent megamenu">
+                            <a href="{% url 'hort:home' %}">{% trans 'Download materials' %}</a>
+                        </li>
+
+                        {% languages 'square' %}
+
                     </ul>
                 </nav>
                 <!--End Desktop Menu-->
@@ -113,32 +129,7 @@
 
             </ul>
         </li>
-        <li class="lvl1 parent megamenu"><a href="#">Pages <i class="anm anm-plus-l"></i></a>
-            <ul>
-                <li><a href="#" class="site-nav">Cart Page <i class="anm anm-plus-l"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="#" class="site-nav">Cart Variant1</a></li>
-                        <li><a href="#" class="site-nav">Cart Variant2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="site-nav">Compare Product <i class="anm anm-plus-l"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="#" class="site-nav">Compare Variant1</a></li>
-                        <li><a href="#" class="site-nav">Compare Variant2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="site-nav">About Us<span class="lbl nm_label1">New</span></a></li>
-                <li><a href="#" class="site-nav">Contact Us</a></li>
-                <ul>
-                    <li><a href="#" class="site-nav">Style 1</a></li>
-                    <li><a href="#" class="site-nav last">Style 2</a></li>
-                </ul>
-                </li>
-                <li><a href="#" class="site-nav">404</a></li>
-                <li><a href="#" class="site-nav">Coming soon<span
-                        class="lbl nm_label1">New</span></a></li>
-            </ul>
-        </li>
+
     </ul>
 </div>
 <!--End Mobile Menu-->
