@@ -56,6 +56,13 @@ class LoadData:
         file.write(str(data.decode('utf-8')))
         file.close()
 
+    def load_category_product_hort(self):
+        deficit = self.client.service.GetData('category_product_hort')
+        data = base64.b64decode(deficit)
+        file = open('cache/category_product.csv', 'w', newline='', encoding='utf-8')
+        file.write(str(data.decode('utf-8')))
+        file.close()
+
 
 LoadData = LoadData()
 LoadData.load_products()
@@ -64,5 +71,6 @@ LoadData.load_description()
 LoadData.load_applicability()
 LoadData.load_product_manufacturer_model()
 LoadData.load_product_images()
+LoadData.load_category_product_hort()
 
 print('Load Data Products')
