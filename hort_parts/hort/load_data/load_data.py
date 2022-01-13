@@ -41,7 +41,10 @@ class LoadData:
             name_de character varying(500),
             article character varying(300),
             specification character varying(300),
-            advanced_description text   );'''
+            advanced_description_ru text,
+            advanced_description_uk text,  
+            advanced_description_en text,
+            advanced_description_de text  );'''
         cur.execute(t_sql)
         self.conn.commit()
 
@@ -49,7 +52,8 @@ class LoadData:
             cur.copy_from(file, 'hort_product_buffer',
                           columns=(
                               'source_id', 'source_commercial', 'source_category', 'name_ru', 'name_uk', 'name_en',
-                              'name_de', 'article', 'specification', 'advanced_description'),
+                              'name_de', 'article', 'specification', 'advanced_description_ru',
+                              'advanced_description_uk', 'advanced_description_en',  'advanced_description_de'),
                           sep='|')
         self.conn.commit()
 
@@ -75,7 +79,10 @@ class LoadData:
                 article = b.article,
                 slug = b.article,
                 specification = b.specification,
-                advanced_description = b.advanced_description                                      
+                advanced_description_ru = b.advanced_description_ru,
+                advanced_description_uk = b.advanced_description_uk,
+                advanced_description_en = b.advanced_description_en,
+                advanced_description_de = b.advanced_description_de                                      
             FROM hort_product_buffer b
             WHERE p.source_id = b.source_id;'''
         cur.execute(copy_sql)

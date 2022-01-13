@@ -14,7 +14,7 @@ class CommercialTranslationOptions(TranslationOptions):
 
 @register(Product)
 class ProductTranslationOptions(TranslationOptions):
-    fields = ('name', 'comment')
+    fields = ('name', 'comment', 'advanced_description')
 
 
 @register(ContentCategory)
