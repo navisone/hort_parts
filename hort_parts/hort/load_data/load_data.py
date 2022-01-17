@@ -12,7 +12,7 @@ class LoadData:
         session.auth = HTTPBasicAuth('Robot', 'Robot')
         transport = Transport(session=session, timeout=600)
         settings = Settings(xml_huge_tree=True)
-        self.client = Client('http://192.168.75.104/live/ws/navis_hort?wsdl', transport=transport,
+        self.client = Client('http://192.168.75.45/live/ws/navis_hort?wsdl', transport=transport,
                              settings=settings)
 
         self.conn = psycopg2.connect(
@@ -299,17 +299,18 @@ class LoadData:
 
 
 LoadData = LoadData()
+
 LoadData.load_products()
 print('Load Products')
 
-# LoadData.load_cross()
-# print('Load Cross')
-#
-# LoadData.load_description()
-# print('Load Description')
-#
-# LoadData.load_applicability()
-# print('Load Applicability')
+LoadData.load_cross()
+print('Load Cross')
+
+LoadData.load_description()
+print('Load Description')
+
+LoadData.load_applicability()
+print('Load Applicability')
 
 LoadData.load_product_images()
 print('Load Images')
