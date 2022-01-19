@@ -102,64 +102,6 @@
 
                         <div class="gallery resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0"
                              style="display:block">
-
-                            <div class="col-md-4 col-sm-12 border-right">
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb"
-                                       href="#"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/kolodki_1.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'BRAKE PADS' %}</span></p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-12">
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb "
-                                       href="#"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/discbrake_1.jpg' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'DISK BRAKE' %}</span></p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb "
-                                       href="#"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/remni_1.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'BELT' %}</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-no-gutter">
-                <div class="resp-tabs" style="display: block; width: 100%;">
-                    <div class="resp-tabs-container">
-
-                        <div class="gallery resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0"
-                             style="display:block">
                             <!--gallery-->
                             <div class="col-md-4 col-sm-12 border-right">
 
@@ -371,10 +313,15 @@
 
 
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 
@@ -445,6 +392,57 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/kolodki_1.png' %}">
+                        <a href="brakepad/" class="overlay">
+                            <img src="{% static 'images/catalog/kolodki_1.png' %}">
+                            <div class="item-text">
+                                <span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'BRAKE PADS' %}</h3>
+                            </div>
+                        </a>
+                        <a href="brakepad/" class="details-link" title="details">
+                            <i class="icon-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/discbrake_1.jpg' %}">
+                        <a href="discbrake/" class="overlay">
+                            <img src="{% static 'images/catalog/discbrake_1.jpg' %}">
+                            <div class="item-text">
+                                <span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'DISK BRAKE' %}</h3>
+                            </div>
+                        </a>
+                        <a href="discbrake/" class="details-link" title="details">
+                            <i class="icon-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/remni_1.png' %}">
+                        <a href="belt/" class="overlay">
+                            <img src="{% static 'images/catalog/remni_1.png' %}">
+                            <div class="item-text">
+                                <span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'BELT' %}</h3>
+                            </div>
+                        </a>
+                        <a href="belt/" class="details-link" title="details">
+                            <i class="icon-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
 
 
 
