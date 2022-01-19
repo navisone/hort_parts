@@ -2054,14 +2054,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #products span {
-    color: #07617d;
+    color: #ffd500;
+    font-size: 1rem;
 }
 
 #products h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.2;
-    color: #303334;
+    color: #ff0000;;
     text-transform: uppercase;
     letter-spacing: .5rem;
     position: relative;
@@ -2072,7 +2073,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     content: "";
     width: 3px;
     height: 9.6rem;
-    background-color: rgba(149, 149, 149, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 2.4rem;
 }
 

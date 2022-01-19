@@ -89,12 +89,9 @@
 </section>
 
 <section id="products">
-
     <div class="row about-wrap">
         <div class="col-full">
-
             <div class="about-profile-bg"></div>
-
             <div class="intro">
                 <h3 class="animate-this">{% trans 'Products' %}</h3>
             </div>
@@ -105,38 +102,6 @@
 
                         <div class="gallery resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0"
                              style="display:block">
-                            <!--gallery-->
-                            <div class="col-md-4 col-sm-12 border-right">
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb"
-                                       href="shockabsorber/"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/absorber2.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name">
-                                                <span>{% trans 'SHOCK ABSORBERS' %}</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb"
-                                       href="thermostat/"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/thermostat2.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'THERMOSTAT' %}</span></p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
 
                             <div class="col-md-4 col-sm-12 border-right">
 
@@ -306,7 +271,8 @@
                                         <span class="thumb_overlay"></span>
                                         <div class="gallery_overlay">
                                             <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'STAINLESS STEEL FITTINGS' %}</span></p>
+                                            <p class="light brand_name">
+                                                <span>{% trans 'STAINLESS STEEL FITTINGS' %}</span></p>
                                         </div>
                                     </a>
                                 </div>
@@ -380,7 +346,8 @@
                                         <span class="thumb_overlay"></span>
                                         <div class="gallery_overlay">
                                             <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'CLUTCH AND BRAKE CYLINDERS' %}</span></p>
+                                            <p class="light brand_name">
+                                                <span>{% trans 'CLUTCH AND BRAKE CYLINDERS' %}</span></p>
                                         </div>
                                     </a>
                                 </div>
@@ -428,19 +395,7 @@
                                     </a>
                                 </div>
 
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb "
-                                       href="#"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans '' %}</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -448,6 +403,42 @@
             </div>
         </div>
     </div>
+
+    <div class="row portfolio-content">
+        <div class="col-four">
+            <div id="folio-wrap" class="bricks-wrapper">
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/absorber2.png' %}">
+                        <a href="shockabsorber/" class="overlay">
+                            <img src="{% static 'images/catalog/absorber2.png' %}">
+                            <div class="item-text">
+	                     	<span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'SHOCK ABSORBERS' %}</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/thermostat_1.png' %}">
+                        <a href="thermostat/" class="overlay">
+                            <img src="{% static 'images/catalog/thermostat_1.png' %}">
+                            <div class="item-text">
+	                     	<span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'THERMOSTAT' %}</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section id="about">
