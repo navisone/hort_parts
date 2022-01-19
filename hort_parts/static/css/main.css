@@ -2059,6 +2059,25 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     margin-bottom: 20px;
 }
 
+#products h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #303334;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    position: relative;
+}
+
+#products h2::before {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 9.6rem;
+    background-color: rgba(149, 149, 149, 0.7);
+    margin: 0 auto 2.4rem;
+}
+
 #products h3 {
     font-family: "Roboto", sans-serif;
     font-size: 4rem;

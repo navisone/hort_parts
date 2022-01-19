@@ -68,10 +68,10 @@
 	------------------------------------------------------- */
 	var ssLightGallery = function() {
 
-		$('#folio-wrap').lightGallery({  
+		$('#').lightGallery({
 			showThumbByDefault: false,
 			hash: false,
-			selector: ".item-wrap"		
+			selector: ".item-wrap"
 		});
 	};
 
