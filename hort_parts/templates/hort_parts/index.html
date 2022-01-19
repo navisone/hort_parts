@@ -107,32 +107,6 @@
 
                                 <div class="gallery-skin border-bottom">
                                     <a class="thumb"
-                                       href="waterpump/"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/waterpump2.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'WATER PUMP' %}</span></p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb"
-                                       href="#"
-                                       data-gallery="5">
-                                        <img src="{% static 'images/catalog/alternator_1.png' %}" alt="">
-                                        <span class="thumb_overlay"></span>
-                                        <div class="gallery_overlay">
-                                            <p class="brand_name heading-3"><span>HORT</span></p>
-                                            <p class="light brand_name"><span>{% trans 'GENERATORS' %}</span></p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="gallery-skin border-bottom">
-                                    <a class="thumb"
                                        href="#"
                                        data-gallery="5">
                                         <img src="{% static 'images/catalog/kolodki_1.png' %}" alt="">
@@ -439,6 +413,39 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/water_pump_1.png' %}">
+                        <a href="waterpump/" class="overlay">
+                            <img src="{% static 'images/catalog/water_pump_1.png' %}">
+                            <div class="item-text">
+                                <span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'WATER PUMP' %}</h3>
+                            </div>
+                        </a>
+                        <a href="waterpump/" class="details-link" title="details">
+                            <i class="icon-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this"
+                         data-src="{% static 'images/catalog/alternator_1.png' %}">
+                        <a href="generator/" class="overlay">
+                            <img src="{% static 'images/catalog/alternator_1.png' %}">
+                            <div class="item-text">
+                                <span class="folio-types">HORT PARTS</span>
+                                <h3 class="folio-title">{% trans 'GENERATORS' %}</h3>
+                            </div>
+                        </a>
+                        <a href="generator/" class="details-link" title="details">
+                            <i class="icon-link"></i>
+                        </a>
+                    </div>
+                </div>
+
 
 
             </div>
