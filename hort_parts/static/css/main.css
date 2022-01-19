@@ -2055,12 +2055,13 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #products span {
     color: #ffd500;
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 #products h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2;
     color: #ff0000;;
     text-transform: uppercase;
@@ -2409,7 +2410,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 .bricks-wrapper .item-wrap .overlay {
-    cursor: zoom-in;
+    cursor: grab;
 }
 
 .bricks-wrapper .item-wrap .overlay img {
