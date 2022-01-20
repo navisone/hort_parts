@@ -2506,7 +2506,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 .bricks-wrapper .item-wrap .item-text .folio-types {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 0.5rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: rgba(255, 255, 255, 0.7);
