@@ -25,147 +25,147 @@ msgstr ""
 #: .\templates\hort_parts\product\header.html:38
 #: .\templates\hort_parts\product\product_detail.html:16
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: .\templates\hort_parts\include\footer.html:12
 #: .\templates\hort_parts\index.html:29 .\templates\hort_parts\index.html:439
 #: .\templates\hort_parts\product\about.html:4
 #: .\templates\hort_parts\product\header.html:77
 msgid "About Us"
-msgstr ""
+msgstr "О Нас"
 
 #: .\templates\hort_parts\include\footer.html:13
 #: .\templates\hort_parts\index.html:30
 #: .\templates\hort_parts\product\header.html:80
 #: .\templates\hort_parts\product\warranty.html:4
 msgid "Warranty"
-msgstr ""
+msgstr "Гарантия"
 
 #: .\templates\hort_parts\include\footer.html:14
 #: .\templates\hort_parts\index.html:31
 #: .\templates\hort_parts\product\header.html:83
 msgid "Download materials"
-msgstr ""
+msgstr "Скачать материалы"
 
 #: .\templates\hort_parts\include\footer.html:15
 #: .\templates\hort_parts\index.html:32
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: .\templates\hort_parts\include\footer.html:16
 #: .\templates\hort_parts\index.html:33
 msgid "Contact"
-msgstr ""
+msgstr "Контакты"
 
 #: .\templates\hort_parts\include\footer.html:23
 #: .\templates\hort_parts\include\footer.html:34
 #: .\templates\hort_parts\index.html:28 .\templates\hort_parts\index.html:96
 msgid "Products"
-msgstr ""
+msgstr "Товары"
 
 #: .\templates\hort_parts\include\footer.html:45
 msgid "Follow Us"
-msgstr ""
+msgstr "Подписывайтесь на нас"
 
 #: .\templates\hort_parts\include\footer.html:61
 msgid "Copyright"
-msgstr ""
+msgstr "Авторское право"
 
 #: .\templates\hort_parts\index.html:16
 msgid "Menu"
-msgstr ""
+msgstr "Меню"
 
 #: .\templates\hort_parts\index.html:22
 msgid "Close"
-msgstr ""
+msgstr "Закрыть"
 
 #: .\templates\hort_parts\index.html:63
 msgid "Hort Products"
-msgstr ""
+msgstr "Товары Hort"
 
 #: .\templates\hort_parts\index.html:112
 msgid "SHOCK ABSORBERS"
-msgstr ""
+msgstr "АМОРТИЗАТОРЫ"
 
 #: .\templates\hort_parts\index.html:128
 msgid "THERMOSTAT"
-msgstr ""
+msgstr "ТЕРМОСТАТЫ"
 
 #: .\templates\hort_parts\index.html:144
 msgid "WATER PUMP"
-msgstr ""
+msgstr "ВОДЯНЫЕ НАСОСЫ"
 
 #: .\templates\hort_parts\index.html:160
 msgid "GENERATORS"
-msgstr ""
+msgstr "ГЕНЕРАТОРЫ"
 
 #: .\templates\hort_parts\index.html:176
 msgid "BRAKE PADS"
-msgstr ""
+msgstr "ТОРМОЗНЫЕ КОЛОДКИ"
 
 #: .\templates\hort_parts\index.html:192
 msgid "DISK BRAKE"
-msgstr ""
+msgstr "ДИСКОВЫЕ ТОРМОЗА"
 
 #: .\templates\hort_parts\index.html:208
 msgid "BELT"
-msgstr ""
+msgstr "РЕМНИ"
 
 #: .\templates\hort_parts\index.html:224
 msgid "HIGH-VOLTAGE WIRES"
-msgstr ""
+msgstr "ПРОВОДА ВЫСОКОГО НАПРЯЖЕНИЯ"
 
 #: .\templates\hort_parts\index.html:240
 msgid "GAS SPRINGS"
-msgstr ""
+msgstr "ГАЗОВЫЕ УПОРЫ"
 
 #: .\templates\hort_parts\index.html:256
 msgid "BALL JOINTS"
-msgstr ""
+msgstr "ШАРОВЫЕ ОПОРЫ"
 
 #: .\templates\hort_parts\index.html:272
 msgid "BRANCH PIPES"
-msgstr ""
+msgstr "ПАТРУБКИ"
 
 #: .\templates\hort_parts\index.html:288
 msgid "CONTROL ARMS"
-msgstr ""
+msgstr "РЫЧАГИ"
 
 #: .\templates\hort_parts\index.html:304
 msgid "STAINLESS STEEL FITTINGS"
-msgstr ""
+msgstr "ПАТРУБКИ ИЗ НЕРЖАВЕЮЩЕЙ СТАЛИ"
 
 #: .\templates\hort_parts\index.html:320
 msgid "SUSPENSION SPRINGS"
-msgstr ""
+msgstr "ПРУЖИНЫ ПОДВЕСКИ"
 
 #: .\templates\hort_parts\index.html:336
 msgid "STARTERS"
-msgstr ""
+msgstr "СТАРТЕРА"
 
 #: .\templates\hort_parts\index.html:352
 msgid "STABILIZER STANDS"
-msgstr ""
+msgstr "СТОЙКИ СТАБИЛИЗАТОРА"
 
 #: .\templates\hort_parts\index.html:368
 msgid "CLUTCH AND BRAKE CYLINDERS"
-msgstr ""
+msgstr "СЦЕПЛЕНИЕ И ТОРМОЗНЫЕ ЦИЛИНДРЫ"
 
 #: .\templates\hort_parts\index.html:384
 msgid "BRACKET"
-msgstr ""
+msgstr "КРОНШТЕЙН"
 
 #: .\templates\hort_parts\index.html:400
 msgid "RUBBER BUSHINGS"
-msgstr ""
+msgstr "РЕЗИНОВЫЕ ВТУЛКИ"
 
 #: .\templates\hort_parts\index.html:416
 msgid "STEERING TIPS"
-msgstr ""
+msgstr "РУЛЕВЫЕ НАКОНЕНЧНИКИ И ТЯГИ"
 
 #: .\templates\hort_parts\index.html:441
 msgid "Trademark \"HORT\""
-msgstr ""
+msgstr "Торговая марка HORT"
 
 #: .\templates\hort_parts\index.html:442
 msgid "founded by the German company M-Tech Autoteile GmbH"
@@ -391,46 +391,46 @@ msgstr ""
 
 #: .\templates\hort_parts\product\download.html:4
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: .\templates\hort_parts\product\header.html:40
 msgid "Product"
-msgstr ""
+msgstr "Товар"
 
 #: .\templates\hort_parts\product\header.html:48
 msgid "SUSPENSION"
-msgstr ""
+msgstr "ПОДВЕСКА"
 
 #: .\templates\hort_parts\product\product_detail.html:81
 #: .\templates\hort_parts\product\product_list.html:77
 msgid "Article"
-msgstr ""
+msgstr "Артикул"
 
 #: .\templates\hort_parts\product\product_detail.html:82
 #: .\templates\hort_parts\product\product_list.html:79
 msgid "Specification"
-msgstr ""
+msgstr "Спецификация"
 
 #: .\templates\hort_parts\product\product_detail.html:95
 msgid "Cross Code"
-msgstr ""
+msgstr "Кросс-код"
 
 #: .\templates\hort_parts\product\product_detail.html:96
 msgid "Applicability"
-msgstr ""
+msgstr "Применимость"
 
 #: .\templates\hort_parts\product\product_detail.html:97
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: .\templates\hort_parts\product\product_list.html:33
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: .\templates\hort_parts\product\product_list.html:52
 msgid "Category Description"
-msgstr ""
+msgstr "Описание категории"
 
 #: .\templates\hort_parts\product\product_list.html:83
 msgid "In detail"
-msgstr ""
+msgstr "Детали"
