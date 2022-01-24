@@ -36,3 +36,15 @@ class Search(ListView):
         context["q"] = f'q={self.request.GET.get("q")}&'
         return context
 
+
+def about(request):
+    return render(request, 'hort_parts/product/about.html')
+
+
+def download(request):
+    return render(request, 'hort_parts/product/download.html')
+
+
+def warranty(request):
+    return render(request, 'hort_parts/product/warranty.html')
+

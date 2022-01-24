@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-15 14:32+0200\n"
+"POT-Creation-Date: 2022-01-24 15:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,496 +20,417 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\templates\hort_parts\about.html:14 .\templates\hort_parts\index.html:511
-msgid "Trademark \"HORT\""
-msgstr ""
-
-#: .\templates\hort_parts\about.html:15 .\templates\hort_parts\index.html:512
-msgid "founded by the German company M-Tech Autoteile GmbH"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:16
-msgid ""
-"appeared on the market of auto components in 2009, introducing cooling pumps "
-"for passenger cars."
-msgstr ""
-
-#: .\templates\hort_parts\about.html:18 .\templates\hort_parts\index.html:515
-msgid "At present"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:18 .\templates\hort_parts\about.html:35
-#: .\templates\hort_parts\about.html:42 .\templates\hort_parts\about.html:46
-msgid "TM \"HORT\""
-msgstr ""
-
-#: .\templates\hort_parts\about.html:19
-msgid ""
-"offers to motorists and service specialists a significant list of spare "
-"parts, which include"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:22 .\templates\hort_parts\index.html:519
-#: .\templates\hort_parts\warranty.html:91
-msgid "Shock absorbers"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:23 .\templates\hort_parts\index.html:520
-msgid "Clutch elements"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:24 .\templates\hort_parts\index.html:521
-msgid "Brake pads and cylinders"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:25 .\templates\hort_parts\index.html:522
-#: .\templates\hort_parts\warranty.html:156
-msgid "Thermostats"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:26 .\templates\hort_parts\index.html:523
-msgid "Cooling pumps"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:27 .\templates\hort_parts\index.html:524
-#: .\templates\hort_parts\warranty.html:141
-msgid "Starters"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:28 .\templates\hort_parts\index.html:525
-#: .\templates\hort_parts\warranty.html:126
-msgid "Generators"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:29 .\templates\hort_parts\index.html:526
-msgid "High-voltage wires"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:30 .\templates\hort_parts\index.html:527
-msgid "Timing belts"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:31 .\templates\hort_parts\index.html:528
-msgid "Drive belts"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:32 .\templates\hort_parts\index.html:529
-msgid "Gas stops"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:33 .\templates\hort_parts\index.html:530
-msgid "Constantly done painstaking work to expand the range of products"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:36
-msgid ""
-"in the production of products uses the latest automated control systems for "
-"quality control and shipment of products in accordance with the requirements "
-"of"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:38 .\templates\hort_parts\index.html:536
-msgid "ISO / TS 16949"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:39
-msgid ""
-"which allows you to track all the stages of planning, preparation and "
-"operation of production, tooling, finished products."
-msgstr ""
-
-#: .\templates\hort_parts\about.html:41
-msgid "This approach makes it possible to ensure the quality of"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:42
-msgid "products and assume"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:43
-msgid "warranty obligations"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:44
-msgid "to the consumer for at least"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:44
-#: .\templates\hort_parts\warranty.html:127
-#: .\templates\hort_parts\warranty.html:132
-msgid "12 months"
-msgstr ""
-
-#: .\templates\hort_parts\about.html:45
-msgid "of their operation."
-msgstr ""
-
-#: .\templates\hort_parts\about.html:47
-msgid ""
-"makes maximum efforts to promote quality auto components to the secondary "
-"market."
-msgstr ""
-
+#: .\templates\hort_parts\include\footer.html:11
 #: .\templates\hort_parts\index.html:4 .\templates\hort_parts\index.html:27
 #: .\templates\hort_parts\product\header.html:38
 #: .\templates\hort_parts\product\product_detail.html:16
 msgid "Home"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:28
-msgid "Products"
-msgstr ""
-
-#: .\templates\hort_parts\index.html:29 .\templates\hort_parts\index.html:509
+#: .\templates\hort_parts\include\footer.html:12
+#: .\templates\hort_parts\index.html:29 .\templates\hort_parts\index.html:439
+#: .\templates\hort_parts\product\about.html:4
+#: .\templates\hort_parts\product\header.html:77
 msgid "About Us"
 msgstr ""
 
+#: .\templates\hort_parts\include\footer.html:13
 #: .\templates\hort_parts\index.html:30
+#: .\templates\hort_parts\product\header.html:80
+#: .\templates\hort_parts\product\warranty.html:4
 msgid "Warranty"
 msgstr ""
 
+#: .\templates\hort_parts\include\footer.html:14
 #: .\templates\hort_parts\index.html:31
+#: .\templates\hort_parts\product\header.html:83
 msgid "Download materials"
 msgstr ""
 
+#: .\templates\hort_parts\include\footer.html:15
 #: .\templates\hort_parts\index.html:32
 msgid "News"
 msgstr ""
 
+#: .\templates\hort_parts\include\footer.html:16
 #: .\templates\hort_parts\index.html:33
 msgid "Contact"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:513
+#: .\templates\hort_parts\include\footer.html:23
+#: .\templates\hort_parts\include\footer.html:34
+#: .\templates\hort_parts\index.html:28 .\templates\hort_parts\index.html:96
+msgid "Products"
+msgstr ""
+
+#: .\templates\hort_parts\include\footer.html:45
+msgid "Follow Us"
+msgstr ""
+
+#: .\templates\hort_parts\include\footer.html:61
+msgid "Copyright"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:16
+msgid "Menu"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:22
+msgid "Close"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:63
+msgid "Hort Products"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:112
+msgid "SHOCK ABSORBERS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:128
+msgid "THERMOSTAT"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:144
+msgid "WATER PUMP"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:160
+msgid "GENERATORS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:176
+msgid "BRAKE PADS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:192
+msgid "DISK BRAKE"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:208
+msgid "BELT"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:224
+msgid "HIGH-VOLTAGE WIRES"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:240
+msgid "GAS SPRINGS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:256
+msgid "BALL JOINTS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:272
+msgid "BRANCH PIPES"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:288
+msgid "CONTROL ARMS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:304
+msgid "STAINLESS STEEL FITTINGS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:320
+msgid "SUSPENSION SPRINGS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:336
+msgid "STARTERS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:352
+msgid "STABILIZER STANDS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:368
+msgid "CLUTCH AND BRAKE CYLINDERS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:384
+msgid "BRACKET"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:400
+msgid "RUBBER BUSHINGS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:416
+msgid "STEERING TIPS"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:441
+msgid "Trademark \"HORT\""
+msgstr ""
+
+#: .\templates\hort_parts\index.html:442
+msgid "founded by the German company M-Tech Autoteile GmbH"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:443
 msgid "appeared on the market of auto components"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:514
+#: .\templates\hort_parts\index.html:444
 msgid "in 2009, introducing cooling pumps for passenger cars"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:515 .\templates\hort_parts\index.html:533
-#: .\templates\hort_parts\index.html:542 .\templates\hort_parts\index.html:545
+#: .\templates\hort_parts\index.html:445
+msgid "At present"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:445 .\templates\hort_parts\index.html:463
+#: .\templates\hort_parts\index.html:472 .\templates\hort_parts\index.html:475
 msgid "TM HORT"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:516
+#: .\templates\hort_parts\index.html:446
 msgid "offers to motorists and service specialists a significant list of"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:517
+#: .\templates\hort_parts\index.html:447
 msgid "spare parts, which include"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:534
+#: .\templates\hort_parts\index.html:449 .\templates\hort_parts\index.html:546
+msgid "Shock absorbers"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:450
+msgid "Clutch elements"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:451
+msgid "Brake pads and cylinders"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:452 .\templates\hort_parts\index.html:611
+msgid "Thermostats"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:453
+msgid "Cooling pumps"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:454 .\templates\hort_parts\index.html:596
+msgid "Starters"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:455 .\templates\hort_parts\index.html:581
+msgid "Generators"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:456
+msgid "High-voltage wires"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:457
+msgid "Timing belts"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:458
+msgid "Drive belts"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:459
+msgid "Gas stops"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:460
+msgid "Constantly done painstaking work to expand the range of products"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:464
 msgid ""
 "in the production of products uses the latest automated control systems for"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:535
+#: .\templates\hort_parts\index.html:465
 msgid ""
 "quality control and shipment of products in accordance with the requirements "
 "of"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:537
+#: .\templates\hort_parts\index.html:466
+msgid "ISO / TS 16949"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:467
 msgid "which allows you to track all the stages of planning"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:538
+#: .\templates\hort_parts\index.html:468
 msgid "preparation and operation of production"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:539
+#: .\templates\hort_parts\index.html:469
 msgid "tooling, finished products"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:541
+#: .\templates\hort_parts\index.html:471
 msgid "This approach makes it possible to ensure the quality of "
 msgstr ""
 
-#: .\templates\hort_parts\index.html:543
+#: .\templates\hort_parts\index.html:473
 msgid "products and assume warranty obligations to the consumer for at least"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:544
+#: .\templates\hort_parts\index.html:474
 msgid "12 months of their operation"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:546
+#: .\templates\hort_parts\index.html:476
 msgid ""
 "makes maximum efforts to promote quality auto components to the secondary "
 "market"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:20
+#: .\templates\hort_parts\index.html:493
 msgid "PRODUCT WARRANTY OF THE TRADE MARK \"HORT\""
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:21
-msgid "BASIC CONCEPTS"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:48
-#: .\templates\hort_parts\warranty.html:54
-#: .\templates\hort_parts\warranty.html:167
-#: .\templates\hort_parts\warranty.html:169
-#: .\templates\hort_parts\warranty.html:182
-msgid "TМ «HORT»"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:48
-msgid "sets the warranty period for its products"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:54
-msgid "guarantees high quality products. For security and maximum efficiency"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:55
-msgid ""
-"recommends to allow all prophylactic and repair work to be performed only by "
-"trained specialists in accordance with the instructions of the manufacturer "
-"of the car."
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:56
-msgid ""
-"In the case of incorrect or unskilled installation, TM \"HORT\" products are "
-"not liable for warranty obligations."
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:58
-msgid ""
-"In the event of a warranty, during the warranty period, please return the "
-"product to the seller, showing the following documents required:"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:60
-msgid "Warranty card;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:61
-msgid "Commodity or cash check;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:62
-msgid ""
-"Order-STO on the installation of spare parts (if the spare part was "
-"installed on the service station)."
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:65
-msgid "The guarantee is not granted in case:"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:67
-msgid ""
-"Failure to comply with the installation rules established by the "
-"manufacturer of the car;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:68
-msgid "Incorrect selection of spare parts;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:69
-msgid "The presence of mechanical damage;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:70
-msgid ""
-"Incorrect storage or operation, damage to a spare part as a result of an "
-"accident;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:71
-msgid ""
-"If the cause of the failure of the product was a malfunction of another part "
-"or units;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:72
-msgid ""
-"Installations of a spare part for a car that was subjected to operational "
-"load, used in races, rally, etc .;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:73
-msgid ""
-"Natural wear parts (for brake pads, brake discs, brake drums, discs and "
-"clutch baskets, drive belts)."
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:79
-msgid "TERMS OF WARRANTY ON SPARE PARTS AT STATION INSTALLATION:"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:84
+#: .\templates\hort_parts\index.html:539
 msgid "Category of spare parts"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:85
+#: .\templates\hort_parts\index.html:540
 msgid "Warranty period"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:86
+#: .\templates\hort_parts\index.html:541
 msgid "Run (km) of the car"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:93
-#: .\templates\hort_parts\warranty.html:123
-#: .\templates\hort_parts\warranty.html:153
+#: .\templates\hort_parts\index.html:547 .\templates\hort_parts\index.html:582
+#: .\templates\hort_parts\index.html:587
+msgid "12 months"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:548 .\templates\hort_parts\index.html:578
+#: .\templates\hort_parts\index.html:608
 msgid "or 20,000 km"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:96
-#: .\templates\hort_parts\warranty.html:101
-#: .\templates\hort_parts\warranty.html:106
+#: .\templates\hort_parts\index.html:551 .\templates\hort_parts\index.html:556
+#: .\templates\hort_parts\index.html:561
 msgid "High voltage wires"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:97
-#: .\templates\hort_parts\warranty.html:102
-#: .\templates\hort_parts\warranty.html:107
-#: .\templates\hort_parts\warranty.html:122
-#: .\templates\hort_parts\warranty.html:137
+#: .\templates\hort_parts\index.html:552 .\templates\hort_parts\index.html:557
+#: .\templates\hort_parts\index.html:562 .\templates\hort_parts\index.html:577
+#: .\templates\hort_parts\index.html:592
 msgid "6 months"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:98
-#: .\templates\hort_parts\warranty.html:103
-#: .\templates\hort_parts\warranty.html:108
+#: .\templates\hort_parts\index.html:553 .\templates\hort_parts\index.html:558
+#: .\templates\hort_parts\index.html:563
 msgid "or 15,000 km"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:111
+#: .\templates\hort_parts\index.html:566
 msgid "Water pumps"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:112
+#: .\templates\hort_parts\index.html:567
 msgid "18 months"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:113
+#: .\templates\hort_parts\index.html:568
 msgid "or 80,000 km"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:116
+#: .\templates\hort_parts\index.html:571
 msgid "Gas springs"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:117
-#: .\templates\hort_parts\warranty.html:142
-#: .\templates\hort_parts\warranty.html:147
-#: .\templates\hort_parts\warranty.html:157
+#: .\templates\hort_parts\index.html:572 .\templates\hort_parts\index.html:597
+#: .\templates\hort_parts\index.html:602 .\templates\hort_parts\index.html:612
 msgid "24 months"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:121
+#: .\templates\hort_parts\index.html:576
 msgid "Brake pads"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:131
+#: .\templates\hort_parts\index.html:586
 msgid "Hydraulic cylinders"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:136
+#: .\templates\hort_parts\index.html:591
 msgid "Belts"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:138
+#: .\templates\hort_parts\index.html:593
 msgid "or 30,000 km"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:146
+#: .\templates\hort_parts\index.html:601
 msgid "Starter batteries"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:151
+#: .\templates\hort_parts\index.html:606
 msgid "Stabilizer stands"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:152
+#: .\templates\hort_parts\index.html:607
 msgid "4 months"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:158
+#: .\templates\hort_parts\index.html:613
 msgid "or 125,000 km"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:162
+#: .\templates\hort_parts\index.html:617
 msgid ""
 "guarantee provided two shock absorbers are installed on one axle of the car"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:166
-msgid "GUARANTEE TALON"
+#: .\templates\hort_parts\product\download.html:4
+msgid "Download"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:167
-msgid "Warranty card for products"
+#: .\templates\hort_parts\product\header.html:40
+msgid "Product"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:167
-msgid ""
-"- this is a document that contains all the necessary data for the user and "
-"the automaker."
+#: .\templates\hort_parts\product\header.html:48
+msgid "SUSPENSION"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:168
-msgid "It includes information:"
+#: .\templates\hort_parts\product\product_detail.html:81
+#: .\templates\hort_parts\product\product_list.html:77
+msgid "Article"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:169
-msgid "Name and article products"
+#: .\templates\hort_parts\product\product_detail.html:82
+#: .\templates\hort_parts\product\product_list.html:79
+msgid "Specification"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:172
-msgid "Name, address and telephone number of the trade organization;"
+#: .\templates\hort_parts\product\product_detail.html:95
+msgid "Cross Code"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:173
-msgid "Date of sale;"
+#: .\templates\hort_parts\product\product_detail.html:96
+msgid "Applicability"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:174
-msgid "Signature of the seller and seal of the trade organization;"
+#: .\templates\hort_parts\product\product_detail.html:97
+msgid "Description"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:175
-msgid ""
-"A mark about carrying out of works on installation and maintenance service;"
+#: .\templates\hort_parts\product\product_list.html:33
+msgid "Categories"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:176
-msgid "Service name and address;"
+#: .\templates\hort_parts\product\product_list.html:52
+msgid "Category Description"
 msgstr ""
 
-#: .\templates\hort_parts\warranty.html:177
-msgid "Date of installation;"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:178
-msgid "Make, model, year of issue and mileage (km) of the car."
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:180
-msgid "Warranty coupons are contained in product packages"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:180
-msgid "ТМ «HORT»"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:182
-msgid ""
-"The warranty card confirms the originality (authenticity) of the origin of "
-"the products"
-msgstr ""
-
-#: .\templates\hort_parts\warranty.html:184
-msgid ""
-"The firm guarantee from ТМ \"HORT\" for TM \"HORT\" products is given only "
-"with the presence of a properly completed Guarantee Certificate TM \"HORT\"."
+#: .\templates\hort_parts\product\product_list.html:83
+msgid "In detail"
 msgstr ""

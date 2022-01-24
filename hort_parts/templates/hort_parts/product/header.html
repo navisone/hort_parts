@@ -74,13 +74,13 @@
                         </li>
 
                         <li class="lvl1 parent megamenu">
-                            <a href="/#about">{% trans 'About Us' %}</a>
+                            <a href="{% url 'hort:about' %}">{% trans 'About Us' %}</a>
                         </li>
                         <li class="lvl1 parent megamenu">
-                            <a href="{% url 'hort:home' %}">{% trans 'Warranty' %}</a>
+                            <a href="{% url 'hort:warranty' %}">{% trans 'Warranty' %}</a>
                         </li>
                         <li class="lvl1 parent megamenu">
-                            <a href="{% url 'hort:home' %}">{% trans 'Download materials' %}</a>
+                            <a href="{% url 'hort:download' %}">{% trans 'Download materials' %}</a>
                         </li>
 
                         {% languages 'square' %}
