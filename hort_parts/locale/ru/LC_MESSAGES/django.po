@@ -257,7 +257,7 @@ msgstr ""
 
 #: .\templates\hort_parts\index.html:466
 msgid "ISO / TS 16949"
-msgstr ""
+msgstr "ISO / TS 16949"
 
 #: .\templates\hort_parts\index.html:467
 msgid "which allows you to track all the stages of planning"
