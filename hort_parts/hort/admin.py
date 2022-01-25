@@ -93,7 +93,7 @@ class DescriptionAdmin(admin.ModelAdmin):
 
 @admin.register(ContentCategory)
 class ContentCategoryAdmin(TranslationAdmin):
-    list_display = ('id', 'name', 'url')
+    list_display = ('id', 'name')
     list_display_links = ('name',)
 
 

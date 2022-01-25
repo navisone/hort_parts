@@ -82,7 +82,6 @@ class ProductImage(models.Model):
 class ContentCategory(models.Model):
     name = models.CharField(max_length=300)
     comment = models.CharField(max_length=300, null=True, blank=True)
-    url = models.SlugField(max_length=300, unique=True)
 
     def __str__(self):
         return self.name
