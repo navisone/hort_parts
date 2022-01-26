@@ -432,51 +432,16 @@
 
     <div class="row about-wrap">
         <div class="col-full">
-
             <div class="about-profile-bg"></div>
-
             <div class="intro">
                 <h3 class="animate-this">{% trans 'About Us' %}</h3>
-
-                <p class="lead animate-this"><span>{% trans 'Trademark "HORT"' %}</span>,
-                    {% trans 'founded by the German company M-Tech Autoteile GmbH' %},
-                    {% trans 'appeared on the market of auto components' %}
-                    {% trans 'in 2009, introducing cooling pumps for passenger cars' %}.
-                    {% trans 'At present' %} <span>{% trans 'TM HORT' %}</span>
-                    {% trans 'offers to motorists and service specialists a significant list of' %}
-                    {% trans 'spare parts, which include' %}:</p>
-                <ul class="animate-this">
-                    <li>{% trans 'Shock absorbers' %}</li>
-                    <li>{% trans 'Clutch elements' %}</li>
-                    <li>{% trans 'Brake pads and cylinders' %}</li>
-                    <li>{% trans 'Thermostats' %}</li>
-                    <li>{% trans 'Cooling pumps' %}</li>
-                    <li>{% trans 'Starters' %}</li>
-                    <li>{% trans 'Generators' %}</li>
-                    <li>{% trans 'High-voltage wires' %}</li>
-                    <li>{% trans 'Timing belts' %}</li>
-                    <li>{% trans 'Drive belts' %}</li>
-                    <li>{% trans 'Gas stops' %}</li>
-                    <li>{% trans 'Constantly done painstaking work to expand the range of products' %}</li>
-                </ul>
+                {% get_about as get_about_list %}
+                {% for about in get_about_list %}
                 <p class="lead animate-this">
-                    <span>{% trans 'TM HORT' %}</span>
-                    {% trans 'in the production of products uses the latest automated control systems for' %}
-                    {% trans 'quality control and shipment of products in accordance with the requirements of' %}
-                    {% trans 'ISO / TS 16949' %},
-                    {% trans 'which allows you to track all the stages of planning' %},
-                    {% trans 'preparation and operation of production' %},
-                    {% trans 'tooling, finished products' %}.
-                    <br>
-                    {% trans 'This approach makes it possible to ensure the quality of ' %}
-                    <span>{% trans 'TM HORT' %}</span>
-                    {% trans 'products and assume warranty obligations to the consumer for at least' %}
-                    {% trans '12 months of their operation' %}.
-                    <span>{% trans 'TM HORT' %}</span>
-                    {% trans 'makes maximum efforts to promote quality auto components to the secondary market' %}.
+                    {{ about.full_text|safe }}
                 </p>
+                {% endfor %}
             </div>
-
         </div>
     </div>
 
@@ -489,149 +454,12 @@
 
     <div class="row narrow section-intro with-bottom-sep animate-this">
         <div class="col-full">
-
-            <h3>{% trans 'PRODUCT WARRANTY OF THE TRADE MARK "HORT"' %}</h3>
+            {% get_warranty as warranty_list %}
+            {% for warranty in warranty_list %}
             <p class="lead">
-                BASIC CONCEPTS
-                This document describes the relationships that arise between buyers, sellers and manufacturers of goods
-                of the trademark "HORT".
-                The basic concepts used in this document are:
-                Buyer - a citizen who receives goods of the trademark "HORT";
-                Seller - an organization that sells goods to customers;
-                Guaranteed STO - a technical service station for cars, which carries out installation, warranty service
-                and repair of goods;
-                Warranty service - maintenance of goods installed on the car during the warranty period;
-                Warranty period - the period during which, in case of detection of defective goods, the Seller is
-                obliged to satisfy the Buyers requirements for the free removal of defects of the goods or reimbursement
-                of expenses for their correction by the Buyer or a third party, a replacement for a product of the same
-                brand, or require the return of the money paid for the product and compensation for the installation
-                costs.
-                GENERAL WARRANTY TERMS
-                1. TМ «HORT» sets the warranty period for its products 12 months, subject to the requirements of
-                storage, installation, use, provided by regulatory documents, technical characteristics and real status,
-                except for the product, which according to this situation is not covered by the guarantee or the
-                duration of the guarantee specified in the Guarantee card.
-                2. The manufacturers warranty applies only to defects of production nature. The warranty period starts
-                from the moment of purchase of the goods by the buyer or from the moment of installation of the part on
-                the car at the service station.
-                3. TМ «HORT» guarantees high quality products. For security and maximum efficiency TМ «HORT» recommends
-                to allow all prophylactic and repair work to be performed only by trained specialists in accordance with
-                the instructions of the manufacturer of the car. In the case of incorrect or unskilled installation, TM
-                "HORT" products are not liable for warranty obligations.
-                4. In the event of a warranty, during the warranty period, please return the product to the seller,
-                showing the following documents required:
-                Warranty card;
-                Commodity or cash check;
-                Order-STO on the installation of spare parts (if the spare part was installed on the service station).
-                5. The guarantee is not granted in case:
-                Failure to comply with the installation rules established by the manufacturer of the car;
-                Incorrect selection of spare parts;
-                The presence of mechanical damage;
-                Incorrect storage or operation, damage to a spare part as a result of an accident;
-                If the cause of the failure of the product was a malfunction of another part or units;
-                Installations of a spare part for a car that was subjected to operational load, used in races, rally,
-                etc .;
-                Natural wear parts (for brake pads, brake discs, brake drums, discs and clutch baskets, drive belts).
+                {{ warranty.full_text|safe }}
             </p>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th><h3><b>{% trans 'Category of spare parts' %} </b></h3></th>
-                    <th><h3><b>{% trans 'Warranty period' %}</b></h3></th>
-                    <th><h3><b>{% trans 'Run (km) of the car' %}</b></h3></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><h3>{% trans 'Shock absorbers' %}*</h3></td>
-                    <td><h3>{% trans '12 months' %}*</h3></td>
-                    <td><h3>{% trans 'or 20,000 km' %}*</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'High voltage wires' %} High Perfomance</h3></td>
-                    <td><h3>{% trans '6 months' %}</h3></td>
-                    <td><h3>{% trans 'or 15,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'High voltage wires' %} Platinize</h3></td>
-                    <td><h3>{% trans '6 months' %}</h3></td>
-                    <td><h3>{% trans 'or 15,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'High voltage wires' %} Silicone</h3></td>
-                    <td><h3>{% trans '6 months' %}</h3></td>
-                    <td><h3>{% trans 'or 15,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Water pumps' %}</h3></td>
-                    <td><h3>{% trans '18 months' %}</h3></td>
-                    <td><h3>{% trans 'or 80,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Gas springs' %}</h3></td>
-                    <td><h3>{% trans '24 months' %}</h3></td>
-                    <td><h3>-</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Brake pads' %}</h3></td>
-                    <td><h3>{% trans '6 months' %}</h3></td>
-                    <td><h3>{% trans 'or 20,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Generators' %}</h3></td>
-                    <td><h3>{% trans '12 months' %}</h3></td>
-                    <td><h3>-</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Hydraulic cylinders' %}</h3></td>
-                    <td><h3>{% trans '12 months' %}</h3></td>
-                    <td><h3>-</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Belts' %}</h3></td>
-                    <td><h3>{% trans '6 months' %}</h3></td>
-                    <td><h3>{% trans 'or 30,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Starters' %}</h3></td>
-                    <td><h3>{% trans '24 months' %}</h3></td>
-                    <td><h3>-</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Starter batteries' %}</h3></td>
-                    <td><h3>{% trans '24 months' %}</h3></td>
-                    <td><h3>-</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Stabilizer stands' %}</h3></td>
-                    <td><h3>{% trans '4 months' %}</h3></td>
-                    <td><h3>{% trans 'or 20,000 km' %}</h3></td>
-                </tr>
-                <tr>
-                    <td><h3>{% trans 'Thermostats' %}</h3></td>
-                    <td><h3>{% trans '24 months' %}</h3></td>
-                    <td><h3>{% trans 'or 125,000 km' %}</h3></td>
-                </tr>
-                </tbody>
-            </table>
-            *{% trans 'guarantee provided two shock absorbers are installed on one axle of the car' %}
-            <p class="lead">
-                GUARANTEE TALON
-                Warranty card for products TМ «HORT» - this is a document that contains all the necessary data for the
-                user and the automaker. It includes information:
-                Name and article products TМ «HORT»;
-                Name, address and telephone number of the trade organization;
-                Date of sale;
-                Signature of the seller and seal of the trade organization;
-                A mark about carrying out of works on installation and maintenance service;
-                Service name and address;
-                Date of installation;
-                Make, model, year of issue and mileage (km) of the car.
-                Warranty coupons are contained in product packages ТМ «HORT».
-                The warranty card confirms the originality (authenticity) of the origin of the products TМ «HORT».
-                The firm guarantee from ТМ "HORT" for TM "HORT" products is given only with the presence of a properly
-                completed Guarantee Certificate TM "HORT".
-            </p>
+            {% endfor %}
         </div>
     </div>
 
@@ -653,54 +481,54 @@
 
 </section>
 
-<section id="news">
+<!--<section id="news">-->
 
-    <div class="row">
-        <div class="col-twelve">
-            <h2 class="animate-this">News</h2>
-        </div>
-    </div>
+<!--    <div class="row">-->
+<!--        <div class="col-twelve">-->
+<!--            <h2 class="animate-this">News</h2>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="row flex-container">
+<!--    <div class="row flex-container">-->
 
-        <div id="testimonial-slider" class="flex-slider animate-this">
+<!--        <div id="testimonial-slider" class="flex-slider animate-this">-->
 
-            <ul class="slides">
+<!--            <ul class="slides">-->
 
-                <li>
-                    <p>
-                        Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                        to do what you believe is great work. And the only way to do great work is to love what you do.
-                        If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart,
-                        you'll know when you find it.
-                    </p>
+<!--                <li>-->
+<!--                    <p>-->
+<!--                        Your work is going to fill a large part of your life, and the only way to be truly satisfied is-->
+<!--                        to do what you believe is great work. And the only way to do great work is to love what you do.-->
+<!--                        If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart,-->
+<!--                        you'll know when you find it.-->
+<!--                    </p>-->
 
-                    <div class="testimonial-author">
-                        <img src="{% static 'images/news/ha30356_m.jpg' %}">
-                    </div>
+<!--                    <div class="testimonial-author">-->
+<!--                        <img src="{% static 'images/news/ha30356_m.jpg' %}">-->
+<!--                    </div>-->
 
-                </li>
+<!--                </li>-->
 
-                <li>
-                    <p>
-                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                    </p>
+<!--                <li>-->
+<!--                    <p>-->
+<!--                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem-->
+<!--                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.-->
+<!--                    </p>-->
 
-                    <div class="testimonial-author">
-                        <img src="{% static 'images/news/ha30356_m.jpg' %}">
-                    </div>
+<!--                    <div class="testimonial-author">-->
+<!--                        <img src="{% static 'images/news/ha30356_m.jpg' %}">-->
+<!--                    </div>-->
 
-                </li> <!-- end slide -->
+<!--                </li> &lt;!&ndash; end slide &ndash;&gt;-->
 
-            </ul>
+<!--            </ul>-->
 
-        </div>
+<!--        </div>-->
 
-    </div>
+<!--    </div>-->
 
-</section>
+<!--</section>-->
 
 <section id="contact">
 
