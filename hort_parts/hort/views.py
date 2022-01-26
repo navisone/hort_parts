@@ -37,14 +37,20 @@ class Search(ListView):
         return context
 
 
-def about(request):
-    return render(request, 'hort_parts/product/about.html')
-
-
 def download(request):
     return render(request, 'hort_parts/product/download.html')
 
 
-def warranty(request):
-    return render(request, 'hort_parts/product/warranty.html')
+class AboutView(ListView):
+    model = Content
+    queryset = Content.objects.filter(category_id=1)
+    context_object_name = 'about_list'
+    template_name = 'hort_parts/product/about.html'
+
+
+class WarrantyView(ListView):
+    model = Content
+    queryset = Content.objects.filter(category_id=2)
+    context_object_name = 'warranty_list'
+    template_name = 'hort_parts/product/warranty.html'
 

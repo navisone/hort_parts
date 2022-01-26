@@ -5,6 +5,27 @@
 {% endblock title_page %}
 
 {% block product_page %}
+<div id="page-content">
+    <!--Page Title-->
+    <div class="page section-header text-center">
+        <div class="page-title">
+            <div class="wrapper"><h1 class="page-width">{% trans 'Warranty' %}</h1></div>
+        </div>
+    </div>
+    <!--End Page Title-->
 
+    {% for warranty in warranty_list %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>{{ warranty.full_text|safe }}</p>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
 
 {% endblock product_page %}
