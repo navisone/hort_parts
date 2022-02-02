@@ -1,9 +1,5 @@
 /* =================================================================== 
  *
- *  Infinity v1.0 Main Stylesheet
- *  01-02-2017
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -172,7 +168,7 @@ p.lead {
     }
 }
 
-em, i, strong, b {
+em, i {
     font-size: 1.6rem;
     line-height: 3rem;
     font-style: normal;
@@ -181,10 +177,6 @@ em, i, strong, b {
 
 em, i {
     font-family: "librebaskerville-italic", serif;
-}
-
-strong, b {
-    font-family: "librebaskerville-bold", serif;
 }
 
 small {
@@ -1915,11 +1907,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #about .about-wrap {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 #about span {
-    color: #ff0000;
+    color: #000000;
 }
 
 #about h3 {
