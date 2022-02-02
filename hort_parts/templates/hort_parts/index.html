@@ -29,7 +29,6 @@
             <li><a class="smoothscroll" href="#about" title="">{% trans 'About Us' %}</a></li>
             <li><a class="smoothscroll" href="#warranty" title="">{% trans 'Warranty' %}</a></li>
             <li><a class="smoothscroll" href="#download" title="">{% trans 'Download materials' %}</a></li>
-            <li><a class="smoothscroll" href="#news" title="">{% trans 'News' %}</a></li>
             <li><a class="smoothscroll" href="#contact" title="">{% trans 'Contact' %}</a></li>
         </ul>
 
@@ -487,8 +486,10 @@
     <div class="row narrow section-intro with-bottom-sep animate-this">
         <div class="col-twelve">
             <h3>{% trans 'Contact' %}</h3>
-            <p class="lead">{% trans 'If you have any business queries or other questions, please fill out the following form to
-                contact us. Thank you.' %}</p>
+            <p class="lead">
+                {% trans 'If you have any business queries or other questions, ' %}
+                {% trans 'please fill out the following form to contact us. Thank you.' %}
+            </p>
         </div>
     </div>
 
@@ -502,7 +503,7 @@
 
                 <div class="form-field">
                     <input name="contactName" type="text" id="contactName"
-                           placeholder="{% trans 'Send Us A Message' %}" value="" minlength="2" required="">
+                           placeholder="{% trans 'Name' %}" value="" minlength="2" required="">
                 </div>
 
                 <div class="row">

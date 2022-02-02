@@ -1194,7 +1194,7 @@ input::-moz-focus-inner {
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.8rem;
     line-height: 1.667;
-    color: rgba(242, 242, 242, 0.5);
+    color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: .3rem;
     margin-bottom: 1.2rem;
@@ -1270,7 +1270,7 @@ input::-moz-focus-inner {
 }
 
 .narrow {
-    max-width: 800px;
+    max-width: 80%;
 }
 
 .js .animate-this, .js .animate-intro {
@@ -2234,8 +2234,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     background-size: cover;
     min-height: 800px;
     position: relative;
-    padding: 15rem 0 15rem;
-    color: rgba(255, 255, 255, 0.3);
+    padding: 3rem 0 3rem;
+    color: #FFFFFF;
 }
 
 #warranty .overlay {
@@ -2261,7 +2261,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #warranty .section-intro h3 {
-    color: rgba(242, 242, 242, 0.5);
+    color: #FFFFFF;
 }
 
 #warranty .section-intro h1 {
@@ -2269,7 +2269,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #warranty .section-intro .lead {
-    color: rgba(242, 242, 242, 0.4);
+    color: #FFFFFF;
 }
 
 #warranty .services-content {
@@ -2288,7 +2288,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #warranty .services-list .service-item p {
-    color: rgba(242, 242, 242, 0.5);
+    color: #FFFFFF;
 }
 
 #warranty .services-list .icon {
@@ -2364,19 +2364,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 
 #download {
-    background: #FFFFFF;
+    background: #111111;
     min-height: 800px;
     position: relative;
     padding: 0;
 }
 
 #download .intro-wrap {
-    padding: 15rem 0 21rem;
+    padding: 5rem 0 3rem;
     background: #111111;
 }
 
 #download .section-intro h3 {
-    color: rgba(242, 242, 242, 0.5);
+    color: #FFFFFF;
 }
 
 #download .section-intro h1 {
@@ -2934,7 +2934,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    padding: 12rem 0 12rem;
+    padding: 5rem 0 5rem;
     position: relative;
 }
 
