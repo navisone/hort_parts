@@ -67,7 +67,8 @@ class Product(models.Model):
 
 
 class ProductImage(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True)
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True,
+                                related_name="product_image")
     source_product = models.CharField(max_length=300, null=True, blank=True)
     image_url = models.URLField(max_length=300, null=True, blank=True)
 

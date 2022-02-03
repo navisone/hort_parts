@@ -12,9 +12,11 @@ def index(request):
 def product_list(request, category_slug):
     categories = Category.objects.all()
     products = Product.objects.all()
+    images = ProductImage.objects.all()
     category = get_object_or_404(Category, url=category_slug)
     products = products.filter(category=category)
-    context = {'category': category, 'categories': categories, 'products': products}
+    images = images.filter(product=products)
+    context = {'category': category, 'categories': categories, 'products': products, 'images': images}
     return render(request, 'hort_parts/product/product_list.html', context)
 
 
@@ -23,6 +25,21 @@ def product_detail(request, category_slug, slug):
     category = get_object_or_404(Category, url=category_slug)
     context = {'category': category, 'product': product}
     return render(request, 'hort_parts/product/product_detail.html', context)
+
+
+# class ProductView(ListView):
+#     model = Product
+#     queryset = Product.objects.all()
+#     context_object_name = 'product_list'
+#     paginate_by = 30
+#     template_name = 'hort_parts/product/product_list.html'
+
+
+# class ProductDetailView(DetailView):
+#     model = Product
+#     queryset = Product.objects.select_related('product_image').all()
+#     context_object_name = 'product_detail'
+#     template_name = 'hort_parts/product/product_detail.html'
 
 
 class Search(ListView):
