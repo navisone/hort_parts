@@ -1,5 +1,5 @@
 {% extends 'hort_parts/product/main.html' %}
-{% load static i18n flags hort_tag media %}
+{% load static i18n flags hort_tag  %}
 {% block  title_page %}
 <title>Hort - {{ category.name }} </title>
 {% endblock title_page %}
@@ -63,8 +63,8 @@
                                     <!-- Image -->
                                     <a href="{{ p.get_absolute_url }}">
                                         <img class="list-view-item__image blur-up lazyload"
-                                             data-src="{% media 'photos/' %}{{ p.article }}/1.jpg"
-                                             src="{% media 'photos/' %}{{ p.article }}/1.jpg"></a>
+                                             data-src="{% static 'photos/' %}{{ p.article }}/1.jpg"
+                                             src="{% static 'photos/' %}{{ p.article }}/1.jpg"></a>
                                     <!-- End Image -->
                                 </div>
                             </div>
