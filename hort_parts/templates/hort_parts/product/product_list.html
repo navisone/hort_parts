@@ -63,8 +63,8 @@
                                     <!-- Image -->
                                     <a href="{{ p.get_absolute_url }}">
                                         <img class="list-view-item__image blur-up lazyload"
-                                             data-src="{% static 'photos/' %}{{ p.article }}/1.jpg"
-                                             src="{% static 'photos/' %}{{ p.article }}/1.jpg"></a>
+                                             data-src="{% static 'photos/' %}{{ p.article.lower }}/1.jpg"
+                                             src="{% static 'photos/' %}{{ p.article.lower }}/1.jpg"></a>
                                     <!-- End Image -->
                                 </div>
                             </div>
