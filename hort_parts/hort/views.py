@@ -12,34 +12,21 @@ def index(request):
 def product_list(request, category_slug):
     categories = Category.objects.all()
     products = Product.objects.all()
-    images = ProductImage.objects.all()
+    paginator = Paginator(products, 15)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number, )
     category = get_object_or_404(Category, url=category_slug)
     products = products.filter(category=category)
-    # images = images.filter(product=products).first()
-    context = {'category': category, 'categories': categories, 'products': products, 'images': images}
+    context = {'category': category, 'categories': categories, 'products': products, 'page_obj': page_obj}
     return render(request, 'hort_parts/product/product_list.html', context)
 
 
 def product_detail(request, category_slug, slug):
-    product = get_object_or_404(Product, slug=slug)
+    product = Product.objects.get(slug=slug)
     category = get_object_or_404(Category, url=category_slug)
-    context = {'category': category, 'product': product}
+    images = ProductImage.objects.filter(product=product)
+    context = {'category': category, 'product': product, 'images': images}
     return render(request, 'hort_parts/product/product_detail.html', context)
-
-
-# class ProductView(ListView):
-#     model = Product
-#     queryset = Product.objects.all()
-#     context_object_name = 'product_list'
-#     paginate_by = 30
-#     template_name = 'hort_parts/product/product_list.html'
-
-
-# class ProductDetailView(DetailView):
-#     model = Product
-#     queryset = Product.objects.select_related('product_image').all()
-#     context_object_name = 'product_detail'
-#     template_name = 'hort_parts/product/product_detail.html'
 
 
 class Search(ListView):
