@@ -27,14 +27,14 @@
             <div class="product-single product-single-1">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                        {% for image in images %}
+
                         <div class="product-details-img product-single__photos bottom">
 
                             <div class="zoompro-wrap product-zoom-right pl-20">
                                 <div class="zoompro-span">
                                     <img class="blur-up lazyload zoompro"
-                                         data-zoom-image="{% static 'img/image_not_found.jpg' %}"
-                                         alt="" src="{% static 'img/image_not_found.jpg' %}"/>
+                                         data-zoom-image="{% static 'photos/' %}{{ p.article.lower }}/1.jpg"
+                                         alt="" src="{% static 'photos/' %}{{ p.article.lower }}/1.jpg"/>
                                 </div>
                                 <div class="product-buttons">
                                     <a href="#" class="btn prlightbox" title="Zoom">
@@ -69,7 +69,7 @@
                             </div>
 
                             <div class="lightboximages">
-                                <a href="{% static 'img/image_not_found.jpg' %}"
+                                <a href="{% static 'photos/' %}{{ p.article.lower }}/1.jpg"
                                    data-size="1024x1024"></a>
                                 <a href="{% static 'img/image_not_found.jpg' %}"
                                    data-size="1024x1024"></a>
@@ -78,7 +78,7 @@
                             </div>
 
                         </div>
-                        {% endfor %}
+
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
