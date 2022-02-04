@@ -15,7 +15,7 @@ def product_list(request, category_slug):
     images = ProductImage.objects.all()
     category = get_object_or_404(Category, url=category_slug)
     products = products.filter(category=category)
-    images = images.filter(product=products)
+    # images = images.filter(product=products).first()
     context = {'category': category, 'categories': categories, 'products': products, 'images': images}
     return render(request, 'hort_parts/product/product_list.html', context)
 

@@ -62,12 +62,9 @@
                                 <div class="list-view-item__image-wrapper">
                                     <!-- Image -->
                                     <a href="{{ p.get_absolute_url }}">
-<!--                                        <img class="list-view-item__image blur-up lazyload"-->
-<!--                                             data-src="{% static 'img/image_not_found.jpg' %}"-->
-<!--                                             src="{% static 'img/image_not_found.jpg' %}"></a>-->
                                         <img class="list-view-item__image blur-up lazyload"
-                                             data-src="{{ images.image_url|safe }}"
-                                             src="{{ images.image_url|safe }}"></a>
+                                             data-src="{% static 'photos/{{ p.article }}/1.jpg' %}"
+                                             src="{% static 'photos/{{ p.article }}/1.jpg' %}"></a>
                                     <!-- End Image -->
                                 </div>
                             </div>
