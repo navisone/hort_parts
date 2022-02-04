@@ -41,40 +41,26 @@
                                         <i class="icon anm anm-expand-l-arrows" aria-hidden="true"></i></a>
                                 </div>
                             </div>
-
+                            {% for image in images %}
                             <div class="product-thumb product-thumb-1">
                                 <div id="gallery" class="product-dec-slider-1 product-tab-left">
-                                    <a data-image="{% static 'img/image_not_found.jpg' %}"
-                                       data-zoom-image="{% static 'img/image_not_found.jpg' %}"
+                                    <a data-image="{{ image.image_url }}"
+                                       data-zoom-image="{{ image.image_url }}"
                                        class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true"
                                        tabindex="-1">
                                         <img class="blur-up lazyload"
-                                             src="{% static 'img/image_not_found.jpg' %}"/>
-                                    </a>
-                                    <a data-image="{% static 'img/image_not_found.jpg' %}"
-                                       data-zoom-image="{% static 'img/image_not_found.jpg' %}"
-                                       class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true"
-                                       tabindex="-1">
-                                        <img class="blur-up lazyload"
-                                             src="{% static 'img/image_not_found.jpg' %}"/>
-                                    </a>
-                                    <a data-image="{% static 'img/image_not_found.jpg' %}"
-                                       data-zoom-image="{% static 'img/image_not_found.jpg' %}"
-                                       class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true"
-                                       tabindex="-1">
-                                        <img class="blur-up lazyload"
-                                             src="{% static 'img/image_not_found.jpg' %}"/>
+                                             src="{{ image.image_url }}"/>
                                     </a>
                                 </div>
                             </div>
-
+                            {% endfor %}
                             <div class="lightboximages">
                                 <a href="{% static 'photos/' %}{{ product.article.lower }}/1.jpg"
                                    data-size="1024x1024"></a>
-                                <a href="{% static 'img/image_not_found.jpg' %}"
+                                {% for image in images %}
+                                <a href="{{ image.image_url }}"
                                    data-size="1024x1024"></a>
-                                <a href="{% static 'img/image_not_found.jpg' %}"
-                                   data-size="1024x1024"></a>
+                                {% endfor %}
                             </div>
 
                         </div>
