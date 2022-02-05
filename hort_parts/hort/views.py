@@ -25,7 +25,11 @@ def product_detail(request, category_slug, slug):
     product = Product.objects.get(slug=slug)
     category = get_object_or_404(Category, url=category_slug)
     images = ProductImage.objects.filter(product=product)
-    context = {'category': category, 'product': product, 'images': images}
+    cross = Cross.objects.filter(product_id=product)
+    applicability = Applicability.objects.filter(product_id=product)
+    description = Description.objects.filter(product_id=product)
+    context = {'category': category, 'product': product, 'images': images, 'cross': cross,
+               'applicability': applicability, 'description': description}
     return render(request, 'hort_parts/product/product_detail.html', context)
 
 

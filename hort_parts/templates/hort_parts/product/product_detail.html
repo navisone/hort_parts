@@ -104,22 +104,36 @@
 
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                      aria-labelledby="nav-home-tab">
-                                    {% trans 'Description' %}
+                                    {{ product.advanced_description|safe }}
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                      aria-labelledby="nav-profile-tab">
                                     {% trans 'Cross Code' %}
+                                    {% for cross in cross %}
+                                    {{ cross.brand }}
+                                    {{ cross.article_nr }}
+                                    {% endfor %}
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                      aria-labelledby="nav-contact-tab">
                                     {% trans 'Applicability' %}
+                                    {% for applicability in applicability %}
+                                    {{ applicability.vehicle }}
+                                    {{ applicability.modification }}
+                                    {{ applicability.engine }}
+                                    {{ applicability.year }}
+                                    {% endfor %}
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-about" role="tabpanel"
                                      aria-labelledby="nav-about-tab">
                                     {% trans 'Characteristics' %}
+                                    {% for description in description %}
+                                    {{ description.property }}
+                                    {{ description.value }}
+                                    {% endfor %}
                                 </div>
                             </div>
 
