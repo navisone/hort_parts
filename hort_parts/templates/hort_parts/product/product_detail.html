@@ -45,8 +45,8 @@
                             <div class="lightboximages">
                                 <a href="{% static 'photos/' %}{{ product.article.lower }}/1.jpg"
                                    data-size="1024x1024"></a>
-                                {% for image in images %}
-                                <a href="{{ image.image_url }}"
+                                {% for images in images %}
+                                <a href="{{ images.image_url }}"
                                    data-size="1024x1024"></a>
                                 {% endfor %}
                             </div>
