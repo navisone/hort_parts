@@ -109,11 +109,22 @@
 
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                      aria-labelledby="nav-profile-tab">
-                                    {% trans 'Cross Code' %}
-                                    {% for cross in cross %}
-                                    {{ cross.brand }}
-                                    {{ cross.article_nr }}
-                                    {% endfor %}
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">{% trans 'Brand' %}</th>
+                                            <th scope="col">{% trans 'Cross Code' %}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for cross in cross %}
+                                        <tr>
+                                            <td>{{ cross.brand }}</td>
+                                            <td>{{ cross.article_nr }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
