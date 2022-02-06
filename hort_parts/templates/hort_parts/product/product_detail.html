@@ -129,22 +129,46 @@
 
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                      aria-labelledby="nav-contact-tab">
-                                    {% trans 'Applicability' %}
-                                    {% for applicability in applicability %}
-                                    {{ applicability.vehicle }}
-                                    {{ applicability.modification }}
-                                    {{ applicability.engine }}
-                                    {{ applicability.year }}
-                                    {% endfor %}
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">{% trans 'Vehicle' %}</th>
+                                            <th scope="col">{% trans 'Modification' %}</th>
+                                            <th scope="col">{% trans 'Engine' %}</th>
+                                            <th scope="col">{% trans 'Year' %}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for applicability in applicability %}
+                                        <tr>
+                                            <td>{{ applicability.vehicle }}</td>
+                                            <td>{{ applicability.modification }}</td>
+                                            <td>{{ applicability.engine }}</td>
+                                            <td>{{ applicability.year }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
                                 </div>
 
                                 <div class="tab-pane fade" id="nav-about" role="tabpanel"
                                      aria-labelledby="nav-about-tab">
-                                    {% trans 'Characteristics' %}
-                                    {% for description in description %}
-                                    {{ description.property }}
-                                    {{ description.value }}
-                                    {% endfor %}
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">{% trans 'Characteristics' %}</th>
+                                            <th scope="col">{% trans 'Value' %}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for description in description %}
+                                        <tr>
+                                            <td>{{ description.property }}</td>
+                                            <td>{{ description.value }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
