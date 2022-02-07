@@ -123,8 +123,12 @@ class LoadData:
                           columns=('product', 'brand', 'article_nr'), sep='|')
         self.conn.commit()
 
-        ins_sql = '''INSERT INTO hort_cross (product)
-                SELECT product FROM hort_cross_buffer
+        trnc_sql = '''TRUNCATE TABLE hort_cross;'''
+        cur.execute(trnc_sql)
+        self.conn.commit()
+
+        ins_sql = '''INSERT INTO hort_cross (product, brand, article_nr)
+                SELECT product, brand, article_nr FROM hort_cross_buffer
                 WHERE product NOT IN (SELECT product FROM hort_cross WHERE product IS NOT NULL);'''
         cur.execute(ins_sql)
         self.conn.commit()
@@ -132,15 +136,6 @@ class LoadData:
         del_sql = '''DELETE FROM hort_cross
                 WHERE product NOT IN (SELECT product FROM hort_cross_buffer);'''
         cur.execute(del_sql)
-        self.conn.commit()
-
-        copy_sql = '''UPDATE hort_cross p
-            SET
-                brand = b.brand,
-                article_nr = b.article_nr                      
-            FROM hort_cross_buffer b
-            WHERE p.product = b.product;'''
-        cur.execute(copy_sql)
         self.conn.commit()
 
         upd_sql = '''UPDATE hort_cross s
@@ -171,8 +166,12 @@ class LoadData:
                           columns=('product', 'property', 'value'), sep='|')
         self.conn.commit()
 
-        ins_sql = '''INSERT INTO hort_description (product)
-                        SELECT product FROM hort_description_buffer
+        trnc_sql = '''TRUNCATE TABLE hort_description;'''
+        cur.execute(trnc_sql)
+        self.conn.commit()
+
+        ins_sql = '''INSERT INTO hort_description (product, property, value)
+                        SELECT product, property, value FROM hort_description_buffer
                         WHERE product NOT IN (SELECT product FROM hort_description WHERE product IS NOT NULL);'''
         cur.execute(ins_sql)
         self.conn.commit()
@@ -180,15 +179,6 @@ class LoadData:
         del_sql = '''DELETE FROM hort_description
                         WHERE product NOT IN (SELECT product FROM hort_description_buffer);'''
         cur.execute(del_sql)
-        self.conn.commit()
-
-        copy_sql = '''UPDATE hort_description p
-            SET
-                property = b.property,
-                value = b.value                         
-            FROM hort_description_buffer b
-            WHERE p.product = b.product;'''
-        cur.execute(copy_sql)
         self.conn.commit()
 
         upd_sql = '''UPDATE hort_description d
@@ -221,8 +211,8 @@ class LoadData:
                           columns=('product', 'vehicle', 'modification', 'engine', 'year'), sep='|')
         self.conn.commit()
 
-        ins_sql = '''INSERT INTO hort_applicability (product)
-                        SELECT product FROM hort_applicability_buffer
+        ins_sql = '''INSERT INTO hort_applicability (product, vehicle, modification, engine, year)
+                        SELECT product, vehicle, modification, engine, year FROM hort_applicability_buffer
                         WHERE product NOT IN (SELECT product FROM hort_applicability WHERE product IS NOT NULL);'''
         cur.execute(ins_sql)
         self.conn.commit()
@@ -230,17 +220,6 @@ class LoadData:
         del_sql = '''DELETE FROM hort_applicability
                         WHERE product NOT IN (SELECT product FROM hort_applicability_buffer);'''
         cur.execute(del_sql)
-        self.conn.commit()
-
-        copy_sql = '''UPDATE hort_applicability p
-            SET
-                vehicle = b.vehicle,
-                modification = b.modification,
-                engine = b.engine,
-                year = b.year                         
-            FROM hort_applicability_buffer b
-            WHERE p.product = b.product;'''
-        cur.execute(copy_sql)
         self.conn.commit()
 
         upd_sql = '''UPDATE hort_applicability a
@@ -270,8 +249,8 @@ class LoadData:
                           columns=('source_product', 'image_url'), sep='|')
         self.conn.commit()
 
-        ins_sql = '''INSERT INTO hort_productimage (source_product)
-                        SELECT source_product FROM hort_productimage_buffer
+        ins_sql = '''INSERT INTO hort_productimage (source_product, image_url)
+                        SELECT source_product, image_url FROM hort_productimage_buffer
                         WHERE source_product NOT IN (SELECT source_product FROM hort_productimage 
                         WHERE source_product IS NOT NULL);'''
         cur.execute(ins_sql)
@@ -280,14 +259,6 @@ class LoadData:
         del_sql = '''DELETE FROM hort_productimage
                         WHERE source_product NOT IN (SELECT source_product FROM hort_productimage_buffer);'''
         cur.execute(del_sql)
-        self.conn.commit()
-
-        copy_sql = '''UPDATE hort_productimage p
-                    SET
-                        image_url = b.image_url                         
-                    FROM hort_productimage_buffer b
-                    WHERE p.source_product = b.source_product;'''
-        cur.execute(copy_sql)
         self.conn.commit()
 
         upd_sql = '''UPDATE hort_productimage a

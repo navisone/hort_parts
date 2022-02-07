@@ -44,7 +44,7 @@
 
                             <div class="lightboximages">
                                 {% for images in images %}
-                                <a href="{{ images.image_url }}"
+                                <a href="{% static '' %}{{ images.image_url }}"
                                    data-size="1024x1024"></a>
                                 {% endfor %}
                             </div>
