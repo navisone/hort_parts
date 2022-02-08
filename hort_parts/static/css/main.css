@@ -2364,7 +2364,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 
 #download {
-    background: #111111;
+    background: #383838;
     min-height: 800px;
     position: relative;
     padding: 0;
@@ -2372,7 +2372,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #download .intro-wrap {
     padding: 5rem 0 3rem;
-    background: #111111;
+    background: #383838;
 }
 
 #download .section-intro h3 {
