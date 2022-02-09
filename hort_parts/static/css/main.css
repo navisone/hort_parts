@@ -74,7 +74,7 @@ body {
  * links - (_document-setup) 
  * ------------------------------------------------------------------- */
 a, a:visited {
-    color: #07617d;
+    color: #ffffff;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2371,8 +2371,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #download .intro-wrap {
-    padding: 5rem 0 3rem;
-    background: #383838;
+    padding: 5rem 0 5rem;
+    background: #545454;
 }
 
 #download .section-intro h3 {
