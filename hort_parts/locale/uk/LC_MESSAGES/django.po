@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-02 17:00+0200\n"
+"POT-Creation-Date: 2022-02-12 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,11 @@ msgid "Home"
 msgstr ""
 
 #: .\templates\hort_parts\include\footer.html:12
+#: .\templates\hort_parts\include\footer.html:37
 #: .\templates\hort_parts\index.html:29 .\templates\hort_parts\index.html:436
 #: .\templates\hort_parts\product\about.html:4
 #: .\templates\hort_parts\product\about.html:13
+#: .\templates\hort_parts\product\footer.html:19
 #: .\templates\hort_parts\product\header.html:77
 msgid "About Us"
 msgstr ""
@@ -55,7 +57,8 @@ msgid "News"
 msgstr ""
 
 #: .\templates\hort_parts\include\footer.html:16
-#: .\templates\hort_parts\index.html:32 .\templates\hort_parts\index.html:488
+#: .\templates\hort_parts\index.html:32 .\templates\hort_parts\index.html:790
+#: .\templates\hort_parts\product\footer.html:26
 msgid "Contact"
 msgstr ""
 
@@ -63,6 +66,10 @@ msgstr ""
 #: .\templates\hort_parts\include\footer.html:34
 #: .\templates\hort_parts\index.html:28 .\templates\hort_parts\index.html:95
 msgid "Products"
+msgstr ""
+
+#: .\templates\hort_parts\include\footer.html:26
+msgid "Shock absorbers"
 msgstr ""
 
 #: .\templates\hort_parts\include\footer.html:45
@@ -85,83 +92,103 @@ msgstr ""
 msgid "Hort Products"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:111
+#: .\templates\hort_parts\index.html:111 .\templates\hort_parts\index.html:484
+#: .\templates\hort_parts\product\download.html:31
 msgid "SHOCK ABSORBERS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:127
+#: .\templates\hort_parts\index.html:127 .\templates\hort_parts\index.html:514
+#: .\templates\hort_parts\product\download.html:59
 msgid "THERMOSTAT"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:143
+#: .\templates\hort_parts\index.html:143 .\templates\hort_parts\index.html:499
+#: .\templates\hort_parts\product\download.html:45
 msgid "WATER PUMP"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:159
+#: .\templates\hort_parts\index.html:159 .\templates\hort_parts\index.html:529
+#: .\templates\hort_parts\product\download.html:73
 msgid "GENERATORS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:175
+#: .\templates\hort_parts\index.html:175 .\templates\hort_parts\index.html:544
+#: .\templates\hort_parts\product\download.html:87
 msgid "BRAKE PADS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:191
+#: .\templates\hort_parts\index.html:191 .\templates\hort_parts\index.html:559
+#: .\templates\hort_parts\product\download.html:101
 msgid "DISK BRAKE"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:207
+#: .\templates\hort_parts\index.html:207 .\templates\hort_parts\index.html:574
+#: .\templates\hort_parts\product\download.html:115
 msgid "BELT"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:223
+#: .\templates\hort_parts\index.html:223 .\templates\hort_parts\index.html:589
+#: .\templates\hort_parts\product\download.html:129
 msgid "HIGH-VOLTAGE WIRES"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:239
+#: .\templates\hort_parts\index.html:239 .\templates\hort_parts\index.html:604
+#: .\templates\hort_parts\product\download.html:143
 msgid "GAS SPRINGS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:255
+#: .\templates\hort_parts\index.html:255 .\templates\hort_parts\index.html:619
+#: .\templates\hort_parts\product\download.html:157
 msgid "BALL JOINTS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:271
+#: .\templates\hort_parts\index.html:271 .\templates\hort_parts\index.html:634
+#: .\templates\hort_parts\product\download.html:171
 msgid "BRANCH PIPES"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:287
+#: .\templates\hort_parts\index.html:287 .\templates\hort_parts\index.html:649
+#: .\templates\hort_parts\product\download.html:185
 msgid "CONTROL ARMS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:303
+#: .\templates\hort_parts\index.html:303 .\templates\hort_parts\index.html:664
+#: .\templates\hort_parts\product\download.html:199
 msgid "STAINLESS STEEL FITTINGS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:319
+#: .\templates\hort_parts\index.html:319 .\templates\hort_parts\index.html:679
+#: .\templates\hort_parts\product\download.html:213
 msgid "SUSPENSION SPRINGS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:335
+#: .\templates\hort_parts\index.html:335 .\templates\hort_parts\index.html:694
+#: .\templates\hort_parts\product\download.html:227
 msgid "STARTERS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:351
+#: .\templates\hort_parts\index.html:351 .\templates\hort_parts\index.html:709
+#: .\templates\hort_parts\product\download.html:241
 msgid "STABILIZER STANDS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:367
+#: .\templates\hort_parts\index.html:367 .\templates\hort_parts\index.html:724
+#: .\templates\hort_parts\product\download.html:255
 msgid "CLUTCH AND BRAKE CYLINDERS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:383
+#: .\templates\hort_parts\index.html:383 .\templates\hort_parts\index.html:739
+#: .\templates\hort_parts\product\download.html:269
 msgid "BRACKET"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:399
+#: .\templates\hort_parts\index.html:399 .\templates\hort_parts\index.html:754
+#: .\templates\hort_parts\product\download.html:283
 msgid "RUBBER BUSHINGS"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:415
+#: .\templates\hort_parts\index.html:415 .\templates\hort_parts\index.html:769
+#: .\templates\hort_parts\product\download.html:297
 msgid "STEERING TIPS"
 msgstr ""
 
@@ -171,48 +198,97 @@ msgstr ""
 msgid "Download Materials"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:490
+#: .\templates\hort_parts\index.html:489 .\templates\hort_parts\index.html:504
+#: .\templates\hort_parts\index.html:519 .\templates\hort_parts\index.html:534
+#: .\templates\hort_parts\index.html:549 .\templates\hort_parts\index.html:564
+#: .\templates\hort_parts\index.html:579 .\templates\hort_parts\index.html:594
+#: .\templates\hort_parts\index.html:609 .\templates\hort_parts\index.html:624
+#: .\templates\hort_parts\index.html:639 .\templates\hort_parts\index.html:654
+#: .\templates\hort_parts\index.html:669 .\templates\hort_parts\index.html:684
+#: .\templates\hort_parts\index.html:699 .\templates\hort_parts\index.html:714
+#: .\templates\hort_parts\index.html:729 .\templates\hort_parts\index.html:744
+#: .\templates\hort_parts\index.html:759 .\templates\hort_parts\index.html:774
+#: .\templates\hort_parts\product\download.html:36
+#: .\templates\hort_parts\product\download.html:50
+#: .\templates\hort_parts\product\download.html:64
+#: .\templates\hort_parts\product\download.html:78
+#: .\templates\hort_parts\product\download.html:92
+#: .\templates\hort_parts\product\download.html:106
+#: .\templates\hort_parts\product\download.html:120
+#: .\templates\hort_parts\product\download.html:134
+#: .\templates\hort_parts\product\download.html:148
+#: .\templates\hort_parts\product\download.html:162
+#: .\templates\hort_parts\product\download.html:176
+#: .\templates\hort_parts\product\download.html:190
+#: .\templates\hort_parts\product\download.html:204
+#: .\templates\hort_parts\product\download.html:218
+#: .\templates\hort_parts\product\download.html:232
+#: .\templates\hort_parts\product\download.html:246
+#: .\templates\hort_parts\product\download.html:260
+#: .\templates\hort_parts\product\download.html:274
+#: .\templates\hort_parts\product\download.html:288
+#: .\templates\hort_parts\product\download.html:302
+msgid "Download"
+msgstr ""
+
+#: .\templates\hort_parts\index.html:792
 msgid "If you have any business queries or other questions, "
 msgstr ""
 
-#: .\templates\hort_parts\index.html:491
+#: .\templates\hort_parts\index.html:793
 msgid "please fill out the following form to contact us. Thank you."
 msgstr ""
 
-#: .\templates\hort_parts\index.html:500 .\templates\hort_parts\index.html:527
+#: .\templates\hort_parts\index.html:802 .\templates\hort_parts\index.html:829
 msgid "Send Us A Message"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:506
+#: .\templates\hort_parts\index.html:808
 msgid "Name"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:513
+#: .\templates\hort_parts\index.html:815
 msgid "Email"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:520
+#: .\templates\hort_parts\index.html:822
 msgid "Subject"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:531
+#: .\templates\hort_parts\index.html:833
 msgid "Submit"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:534
+#: .\templates\hort_parts\index.html:836
 msgid "Sending..."
 msgstr ""
 
-#: .\templates\hort_parts\index.html:548
+#: .\templates\hort_parts\index.html:850
 msgid "Your message was sent, thank you!"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:555
+#: .\templates\hort_parts\index.html:857
 msgid "Contact Information"
 msgstr ""
 
-#: .\templates\hort_parts\index.html:558
+#: .\templates\hort_parts\index.html:860
 msgid "Email Us At"
+msgstr ""
+
+#: .\templates\hort_parts\product\footer.html:10
+msgid "Catalog"
+msgstr ""
+
+#: .\templates\hort_parts\product\footer.html:12
+msgid "Shock Absorber"
+msgstr ""
+
+#: .\templates\hort_parts\product\footer.html:17
+msgid "Informations"
+msgstr ""
+
+#: .\templates\hort_parts\product\footer.html:24
+msgid "Customer Services"
 msgstr ""
 
 #: .\templates\hort_parts\product\header.html:40
@@ -223,34 +299,56 @@ msgstr ""
 msgid "SUSPENSION"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:90
+#: .\templates\hort_parts\product\product_detail.html:61
 #: .\templates\hort_parts\product\product_list.html:75
 msgid "Article"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:91
+#: .\templates\hort_parts\product\product_detail.html:62
 #: .\templates\hort_parts\product\product_list.html:77
 msgid "Specification"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:111
-#: .\templates\hort_parts\product\product_detail.html:134
+#: .\templates\hort_parts\product\product_detail.html:82
 msgid "Description"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:116
-#: .\templates\hort_parts\product\product_detail.html:139
+#: .\templates\hort_parts\product\product_detail.html:87
+#: .\templates\hort_parts\product\product_detail.html:114
 msgid "Cross Code"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:121
-#: .\templates\hort_parts\product\product_detail.html:144
+#: .\templates\hort_parts\product\product_detail.html:92
 msgid "Applicability"
 msgstr ""
 
-#: .\templates\hort_parts\product\product_detail.html:125
-#: .\templates\hort_parts\product\product_detail.html:149
+#: .\templates\hort_parts\product\product_detail.html:96
+#: .\templates\hort_parts\product\product_detail.html:157
 msgid "Characteristics"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:113
+msgid "Brand"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:133
+msgid "Vehicle"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:134
+msgid "Modification"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:135
+msgid "Engine"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:136
+msgid "Year"
+msgstr ""
+
+#: .\templates\hort_parts\product\product_detail.html:158
+msgid "Value"
 msgstr ""
 
 #: .\templates\hort_parts\product\product_list.html:31
